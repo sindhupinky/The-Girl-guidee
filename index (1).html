@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Girl Guide | Affordable finds, honest picks, glow-up essentials</title>
+<meta name="description" content="Affordable products, honest recommendations, fashion inspiration and glow-up essentials.">
+<meta name="theme-color" content="#FAF7F2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FAF7F2;--surface:#FFFFFF;--oat:#F2EADF;--sand:#E6D9C7;--line:#E8DDCE;
+  --ink:#2B211B;--muted:#7A6C60;--mocha:#8B6A52;--btn:#3A2B22;--btnfg:#FAF7F2;
+  --good:#5C7A57;--bad:#A3645A;
+  --serif:'Instrument Serif','Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#171310;--surface:#201A16;--oat:#262019;--sand:#342B23;--line:#382F27;
+    --ink:#F2EADF;--muted:#A99A8C;--mocha:#D2AC8E;--btn:#EBD9C6;--btnfg:#1B1511;
+    --good:#93B58C;--bad:#D59A8E;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#171310;--surface:#201A16;--oat:#262019;--sand:#342B23;--line:#382F27;
+  --ink:#F2EADF;--muted:#A99A8C;--mocha:#D2AC8E;--btn:#EBD9C6;--btnfg:#1B1511;
+  --good:#93B58C;--bad:#D59A8E;color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+main{flex:1}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0}
+ul{list-style:none}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.08}
+svg{display:block}
+:focus-visible{outline:2px solid var(--mocha);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(18px,4vw,44px)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* header */
+.hd{position:sticky;top:0;z-index:40;background:var(--bg);background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:18px;min-height:68px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.logo{font:400 28px/1 var(--serif);letter-spacing:-.02em;margin-right:auto;white-space:nowrap}
+.nav{display:none}
+.nav a{font-size:14.5px;font-weight:500;color:var(--muted);padding:6px 0;border-bottom:1.5px solid transparent;white-space:nowrap}
+.nav a:hover{color:var(--ink)}
+.nav a.on{color:var(--ink);border-color:var(--mocha)}
+.nav.open{display:flex;flex-direction:column;gap:4px;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);padding:12px clamp(18px,4vw,44px) 22px}
+.nav.open a{font-size:19px;padding:10px 0;border-bottom:1px solid var(--line)}
+.search{display:flex;align-items:center;gap:10px;background:var(--oat);border-radius:999px;padding:0 16px;height:42px;order:5;flex:1 1 100%}
+.search input{background:none;border:0;outline:0;flex:1;min-width:0;font-size:15px}
+.search input::placeholder{color:var(--muted)}
+.search:focus-within{box-shadow:0 0 0 2px var(--mocha)}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:var(--muted)}
+.icon-btn:hover{background:var(--oat);color:var(--ink)}
+@media(min-width:1120px){
+  .bar{flex-wrap:nowrap;gap:28px}
+  .logo{margin-right:0}
+  .nav{display:flex;gap:22px;flex:1;justify-content:center}
+  .search{order:0;flex:0 0 230px}
+  .burger{display:none}
+}
+
+/* buttons, pills */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:999px;background:var(--btn);color:var(--btnfg);font-weight:500;font-size:15px;transition:opacity .15s}
+.btn:hover{opacity:.88}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.btn.ghost:hover{background:var(--oat);opacity:1}
+.btn.sm{padding:8px 16px;font-size:13.5px}
+.pill{display:inline-flex;align-items:center;padding:11px 22px;border-radius:999px;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line);font-weight:500;font-size:15px;transition:background .15s}
+.pill:hover,.pill.on{background:var(--btn);color:var(--btnfg);box-shadow:none}
+.chipbtn{padding:8px 16px;border-radius:999px;background:var(--oat);font-size:14px;font-weight:500;color:var(--muted)}
+.chipbtn:hover{color:var(--ink)}
+.chipbtn.on{background:var(--btn);color:var(--btnfg)}
+
+/* art */
+.art{position:relative;overflow:hidden;border-radius:18px;background:var(--oat)}
+.art svg{position:absolute;inset:0;width:100%;height:100%}
+.art .chip{position:absolute;left:12px;top:12px;background:rgba(255,255,255,.86);color:#3A2B22;font-size:12px;font-weight:500;padding:4px 11px;border-radius:999px}
+
+/* masonry */
+.mas{column-count:4;column-gap:22px}
+@media(max-width:1100px){.mas{column-count:3}}
+@media(max-width:720px){.mas{column-count:2;column-gap:12px}}
+.pin{display:block;break-inside:avoid;margin-bottom:28px}
+.pin h3{font-size:22px;margin:12px 4px 2px;text-wrap:balance}
+.pin:hover h3{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.pmeta{font-size:13.5px;color:var(--muted);margin:0 4px}
+
+/* sections */
+.sec{padding:clamp(40px,6vw,80px) 0 0}
+.sech{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:28px;flex-wrap:wrap}
+.sech h2{font-size:clamp(34px,4.6vw,56px)}
+.sech p{color:var(--muted);max-width:34em}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.more{display:flex;justify-content:center;margin:8px 0 0}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,5vw,80px);align-items:center;padding:clamp(36px,6vw,84px) 0 0}
+.hero h1{font-size:clamp(72px,12vw,168px);line-height:.86;letter-spacing:-.04em}
+.hero .sub{max-width:29em;font-size:clamp(17px,1.5vw,20px);color:var(--muted);margin:26px 0 28px}
+.cats{display:flex;flex-wrap:wrap;gap:10px}
+.hsearch{display:flex;align-items:center;gap:6px;margin-top:26px;max-width:520px;background:var(--surface);border-radius:999px;box-shadow:inset 0 0 0 1px var(--line);padding:6px 6px 6px 20px}
+.hsearch:focus-within{box-shadow:inset 0 0 0 2px var(--mocha)}
+.hsearch input{flex:1;min-width:0;background:none;border:0;outline:0;font-size:16px}
+.hsearch input::placeholder{color:var(--muted)}
+.try{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:16px;font-size:14px;color:var(--muted)}
+.try a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px;text-decoration-thickness:1px}
+.try a:hover{color:var(--ink)}
+.arches{position:relative;height:clamp(340px,46vw,580px)}
+.arch{position:absolute;display:block;border-radius:999px 999px 22px 22px;overflow:hidden;animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.arch .art{height:100%;border-radius:0}
+.arch .cap{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);white-space:nowrap;background:rgba(255,255,255,.9);color:#3A2B22;font-size:13px;font-weight:500;padding:6px 14px;border-radius:999px}
+.arch:nth-child(1){left:0;bottom:0;width:45%;height:76%;animation-delay:.05s}
+.arch:nth-child(2){left:31%;top:0;width:42%;height:68%;z-index:2;box-shadow:0 0 0 8px var(--bg);animation-delay:.2s}
+.arch:nth-child(3){right:0;bottom:4%;width:38%;height:60%;animation-delay:.35s}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.arch{animation:none}html{scroll-behavior:auto}}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.arches{height:360px}}
+
+/* collections */
+.colls{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.coll .art{border-radius:18px}
+.coll h3{font-size:28px;margin:14px 2px 2px}
+.coll p{color:var(--muted);font-size:14.5px;margin:0 2px}
+.coll:hover h3{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+@media(max-width:800px){.colls{grid-template-columns:1fr}.coll{display:grid;grid-template-columns:130px 1fr;gap:16px;align-items:center}.coll h3{margin-top:0}}
+
+/* how it works */
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,64px);border-top:1px solid var(--line);padding-top:36px}
+.how h3{font-size:30px;margin-bottom:8px}
+.how span{font:italic 400 20px var(--serif);color:var(--mocha)}
+.how p{color:var(--muted);max-width:26em}
+@media(max-width:800px){.how{grid-template-columns:1fr}}
+
+/* page heads */
+.crumbs{display:flex;flex-wrap:wrap;gap:8px;font-size:13.5px;color:var(--muted);padding:26px 0 0}
+.crumbs a:hover{color:var(--ink);text-decoration:underline}
+.phead{padding:clamp(28px,5vw,64px) 0 clamp(20px,3vw,36px);max-width:860px}
+.phead h1{font-size:clamp(56px,9vw,120px);letter-spacing:-.035em;line-height:.9}
+.phead p{margin-top:18px;font-size:clamp(17px,1.5vw,20px);color:var(--muted);max-width:32em}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:20px;margin:8px 0 0}
+.tile{display:block}
+.tile .art{border-radius:999px 999px 18px 18px}
+.tile .tn{position:absolute;left:0;right:0;bottom:16px;text-align:center;font:400 26px/1 var(--serif);color:#3A2B22}
+.tile .tn small{display:block;font:500 12.5px var(--sans);margin-top:6px;opacity:.75}
+.tile:hover .art{outline:2px solid var(--mocha);outline-offset:3px}
+.subnav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+
+/* article */
+.ahero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,5vw,72px);align-items:center;padding:clamp(24px,4vw,52px) 0 12px}
+.ahero h1{font-size:clamp(42px,6.2vw,84px);letter-spacing:-.03em;line-height:.98;text-wrap:balance}
+.lead{font-size:clamp(17px,1.5vw,19.5px);color:var(--muted);margin-top:22px;max-width:36em;line-height:1.7}
+.lead a,.prose a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mocha);text-underline-offset:4px;text-decoration-thickness:1px}
+.lead a:hover,.prose a:hover{background:var(--oat)}
+.ameta{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:22px;font-size:13.5px;color:var(--muted)}
+.actions{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}
+.aimg .art{border-radius:999px 999px 22px 22px;aspect-ratio:4/5;max-width:440px;margin-left:auto}
+@media(max-width:860px){.ahero{grid-template-columns:1fr}.aimg .art{margin:0;max-width:280px}}
+.disc{font-size:13px;color:var(--muted);padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:28px 0 0}
+.narrow{max-width:900px;margin:0 auto}
+.asec{padding-top:clamp(40px,6vw,72px)}
+.asec>h2{font-size:clamp(32px,4vw,46px);margin-bottom:22px}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));background:var(--oat);border-radius:22px;overflow:hidden}
+.summary>*{padding:24px 26px;border-left:1px solid var(--line)}
+.summary>*:first-child{border-left:0}
+.summary small{display:block;font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.summary b{display:block;font:400 22px/1.15 var(--serif);text-wrap:balance}
+.summary i{display:block;font-style:normal;font-size:14px;color:var(--muted);margin-top:6px}
+button.sumlink{display:block;text-align:left;width:100%;transition:background .15s}
+button.sumlink:hover{background:var(--sand)}
+@media(max-width:700px){.summary>*{border-left:0;border-top:1px solid var(--line)}.summary>*:first-child{border-top:0}}
+.tw{overflow-x:auto;border-radius:16px;box-shadow:inset 0 0 0 1px var(--line);background:var(--surface)}
+.cmp{width:100%;border-collapse:collapse;font-size:14.5px;min-width:620px}
+.cmp th{text-align:left;font-weight:500;color:var(--muted);font-size:13px;padding:14px 16px;background:var(--oat)}
+.cmp td{padding:14px 16px;border-top:1px solid var(--line);vertical-align:top}
+.cmp td:first-child{font:italic 400 18px var(--serif);color:var(--mocha);width:44px}
+.cmp button{text-align:left;font-weight:500}
+.cmp button:hover{text-decoration:underline;text-underline-offset:4px}
+.prod{display:grid;grid-template-columns:190px 1fr;gap:clamp(20px,3vw,36px);padding:34px 0;border-top:1px solid var(--line);scroll-margin-top:96px}
+.prod .art{border-radius:16px}
+.phd{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.prod h3{font-size:clamp(25px,2.8vw,34px)}
+.prod h3 em{font:italic 400 20px var(--serif);color:var(--mocha);margin-right:10px}
+.price{font:400 26px var(--serif)}
+.price small{font:400 12.5px var(--sans);color:var(--muted);margin-left:6px}
+.specs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.spec{font-size:13px;padding:5px 13px;border-radius:999px;background:var(--oat)}
+.spec b{font-weight:500;color:var(--muted);margin-right:6px}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:6px 36px;margin:16px 0}
+.pc li{position:relative;padding-left:26px;font-size:15px;margin:6px 0;line-height:1.5}
+.pc .pros li::before{content:'\2713';position:absolute;left:0;color:var(--good);font-weight:600}
+.pc .cons li::before{content:'\2715';position:absolute;left:0;color:var(--bad);font-weight:600}
+.best{font-size:15px;margin:2px 0 20px}
+.best b{font-weight:600}
+@media(max-width:720px){.prod{grid-template-columns:1fr}.prod .art{max-width:150px}.pc{grid-template-columns:1fr}}
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0;font:400 23px/1.25 var(--serif)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';font:300 28px var(--sans);color:var(--mocha);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 40px 22px 0;color:var(--muted);max-width:40em}
+.shop li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.shop li:last-child{border-bottom:1px solid var(--line)}
+.shop .sn{font-weight:500}
+.shop .sp{color:var(--muted);font-size:14px;margin-right:14px}
+.steps{display:grid;gap:0}
+.step{position:relative;display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:1px solid var(--line);cursor:pointer}
+.step input{position:absolute;opacity:0}
+.step .box{flex:0 0 26px;height:26px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--mocha);display:grid;place-items:center;margin-top:1px}
+.step input:checked+.box{background:var(--mocha);box-shadow:none}
+.step input:checked+.box::after{content:'\2713';color:var(--bg);font-size:14px;font-weight:700}
+.step input:checked~.stxt{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--sand)}
+.step input:focus-visible+.box{outline:2px solid var(--mocha);outline-offset:3px}
+.step .stxt em{font:italic 400 17px var(--serif);color:var(--mocha);margin-right:10px}
+.prog{display:flex;align-items:center;gap:14px;margin-bottom:14px;font-size:14px;color:var(--muted)}
+.prog div{flex:1;height:6px;border-radius:9px;background:var(--oat);overflow:hidden}
+.prog div i{display:block;height:100%;background:var(--mocha);width:0;transition:width .3s}
+.steps.grid{grid-template-columns:repeat(2,1fr);column-gap:36px}
+@media(max-width:700px){.steps.grid{grid-template-columns:1fr}}
+
+/* collections */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:34px 22px}
+.pcard .art{border-radius:16px}
+.pcard h4{font-size:20px;margin:12px 2px 6px;line-height:1.15}
+.pcard .row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 2px}
+.pcard .price{font-size:22px}
+.pcard .src{display:block;margin:8px 2px 0;font-size:13px;color:var(--muted)}
+.pcard .src:hover{color:var(--ink);text-decoration:underline}
+.grp{margin-top:clamp(36px,5vw,60px)}
+.grp h2{font-size:clamp(28px,3.4vw,38px);margin-bottom:20px}
+.grp h2 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+
+/* text pages */
+.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,6vw,90px);align-items:start;padding-bottom:20px}
+.split .art{border-radius:999px 999px 22px 22px;aspect-ratio:4/5}
+.prose{max-width:36em}
+.prose h2{font-size:clamp(30px,3.6vw,42px);margin:44px 0 12px}
+.prose h2:first-child{margin-top:0}
+.prose p{margin:0 0 16px;color:var(--muted);font-size:17px;line-height:1.75}
+.prose ul{margin:0 0 16px}
+.prose li{padding:12px 0;border-top:1px solid var(--line);color:var(--muted)}
+.prose li b{color:var(--ink);font-weight:600}
+@media(max-width:800px){.split{grid-template-columns:1fr}.split .art{max-width:260px}}
+.fld{display:block;margin-bottom:18px}
+.fld span{display:block;font-size:14px;font-weight:500;margin-bottom:6px}
+.fld input,.fld select,.fld textarea{width:100%;background:var(--surface);border:0;box-shadow:inset 0 0 0 1px var(--line);border-radius:14px;padding:13px 16px;outline:0;font-size:16px}
+.fld input:focus,.fld select:focus,.fld textarea:focus{box-shadow:inset 0 0 0 2px var(--mocha)}
+.fld textarea{min-height:150px;resize:vertical}
+.note{margin-top:14px;font-size:14.5px;color:var(--good)}
+.empty{padding:40px 0;color:var(--muted);max-width:32em}
+.empty h2{color:var(--ink);font-size:34px;margin-bottom:10px}
+
+/* footer */
+.ft{margin-top:clamp(70px,9vw,120px);border-top:1px solid var(--line);background:var(--oat)}
+.ftg{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding:56px 0 34px}
+.ftg .logo{display:inline-block;font-size:34px;margin-bottom:12px}
+.ftg p{color:var(--muted);max-width:26em;font-size:15px}
+.ftg h4{font:600 14px var(--sans);letter-spacing:0;margin-bottom:12px}
+.ftg li a{display:inline-block;padding:4px 0;color:var(--muted);font-size:15px}
+.ftg li a:hover{color:var(--ink)}
+.legal{border-top:1px solid var(--line);padding:22px 0 34px;font-size:13px;color:var(--muted);max-width:60em}
+@media(max-width:800px){.ftg{grid-template-columns:1fr 1fr}.ftg>div:first-child{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<header class="hd">
+  <div class="wrap bar">
+    <a class="logo" href="#/" aria-label="The Girl Guide, home">The Girl Guide</a>
+    <nav class="nav" id="nav" aria-label="Main"></nav>
+    <label class="search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <span class="sr">Search guides and products</span>
+      <input id="q" type="search" placeholder="Search sunscreen, hostel, hair fall" autocomplete="off">
+    </label>
+    <button class="icon-btn" id="theme" aria-label="Switch between light and dark">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+    </button>
+    <button class="icon-btn burger" id="menu" aria-label="Open menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ftg">
+      <div>
+        <a class="logo" href="#/">The Girl Guide</a>
+        <p>Affordable products, honest recommendations, fashion inspiration and glow-up essentials.</p>
+      </div>
+      <div><h4>Explore</h4><ul id="ft1"></ul></div>
+      <div><h4>Collections</h4><ul id="ft2"></ul></div>
+    </div>
+    <p class="legal">As an Amazon Associate I earn from qualifying purchases. Some links on this site are affiliate links: if you buy through them I may earn a small commission at no extra cost to you. Prices are approximate and change often, so check the live price on Amazon before you buy.</p>
+  </div>
+</footer>
+
+<script>
+/* ============ SITE SETTINGS (edit these) ============ */
+const CONFIG={
+  name:'The Girl Guide',
+  email:'hello@thegirlguide.com',      // where the contact form sends mail
+  amazonTag:'',                        // your Amazon Associates tag, e.g. 'thegirlguide-21'
+  instagram:'https://www.instagram.com/',
+  pinterest:'https://www.pinterest.com/',
+  updated:'September 2026'
+};
+
+/* ============ HELPERS ============ */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const inr=n=>'\u20B9'+n.toLocaleString('en-IN');
+const amz=n=>'https://www.amazon.in/s?k='+encodeURIComponent(n)+(CONFIG.amazonTag?'&tag='+encodeURIComponent(CONFIG.amazonTag):'');
+const hash=s=>{let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0};
+const rng=s=>{let a=hash(s);return()=>{a=(a+0x6D2B79F5)|0;let t=Math.imul(a^(a>>>15),1|a);t=(t+Math.imul(t^(t>>>7),61|t))^t;return((t^(t>>>14))>>>0)/4294967296}};
+const store={get(k){try{return JSON.parse(localStorage.getItem(k)||'[]')}catch(e){return[]}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* ============ CATEGORIES ============ */
+const CATS={
+  'beauty':{name:'Beauty',blurb:'Skincare, haircare, makeup and the small things that actually work, without the \u20B95,000 price tag.'},
+  'fashion':{name:'Fashion',blurb:'Outfit formulas, wardrobe basics and pieces worth the hanger space.'},
+  'amazon-finds':{name:'Amazon Finds',blurb:'The little discoveries people love, sorted by room and reason.'},
+  'home-decor':{name:'Home Decor',blurb:'Soft, cozy, small-space ideas for bedrooms, hostels and desks.'},
+  'lifestyle':{name:'Lifestyle',blurb:'Routines, checklists and challenges for your softest, most organised era.'}
+};
+const SUBS={
+  'beauty':[['skincare','Skincare'],['haircare','Haircare'],['perfumes','Perfumes'],['lip-care','Lip Care'],['body-care','Body Care'],['makeup','Makeup']],
+  'fashion':[['footwear','Footwear'],['outfits','Outfit Ideas'],['wardrobe','Wardrobe Basics']],
+  'amazon-finds':[['kitchen','Kitchen'],['bathroom','Bathroom'],['bedroom','Bedroom'],['office','Office'],['college','College'],['travel','Travel'],['car','Car'],['beauty','Beauty']],
+  'home-decor':[['cozy-corners','Cozy Corners'],['storage','Storage'],['workspaces','Workspaces']],
+  'lifestyle':[['routines','Routines'],['challenges','Challenges'],['essentials','Essentials'],['productivity','Productivity']]
+};
+const PAL={
+  'beauty':['#EBD5CA','#D9B3A3','#F6E9E1','#C48D7A','#9C6B58'],
+  'fashion':['#E7DDD0','#CDBBA5','#F4EEE6','#A89078','#6F5A48'],
+  'amazon-finds':['#F0DEC2','#E3C08F','#F8EEDC','#C99A5B','#8E6A3C'],
+  'home-decor':['#DDE0CC','#B9C1A0','#EEF0E2','#8E9A76','#5F6B4E'],
+  'lifestyle':['#E6D8D3','#CDB2AA','#F3EAE6','#A98079','#75524C']
+};
+
+/* ============ ARTICLE DATA ============
+   P(name, approx price in INR, 'pro;pro', 'con;con', 'best for', 'Spec:value|Spec:value')
+   Starter content: check every price, claim and product before publishing, and rewrite in your own voice. */
+const P=(n,pr,pros,cons,best,spec='')=>({n,pr,pros:pros.split(';'),cons:cons.split(';'),best,spec:spec?Object.fromEntries(spec.split('|').map(s=>s.split(':'))):{}});
+const A=(path,id,title,intro,tags,p,faq=[],x={})=>{const[c,s]=path.split('/');return{c,s,id,title,intro,tags,p,faq,...x}};
+
+const ARTICLES=[
+/* ---- BEAUTY / SKINCARE ---- */
+A('beauty/skincare','sunscreens',"10 Sunscreens That Don't Leave a White Cast",
+"Sunscreen only works if you'll actually wear it, and nobody wears the one that turns them grey. These ten are known for light, near-invisible finishes. Build the rest of your routine with a gentle [[face-wash|face wash]], a light [[moisturizers|moisturizer]] and a [[vitamin-c-serums|vitamin C serum]], then follow it all in your [[morning-routine|morning routine]].",
+"sunscreen spf sun protection white cast summer skincare tan",[
+ P("Minimalist SPF 50 Light Fluid Sunscreen",399,"Weightless fluid that melts in;No visible cast on most skin tones;Great value","Slight sheen on very oily skin;Needs reapplying every 2 to 3 hours outdoors","Everyday wear on a budget","SPF:50 PA++++|Finish:Natural"),
+ P("Aqualogica Glow+ Dewy Sunscreen SPF 50",399,"Glowy, skin-like finish;Hydrating enough for humid days;Sits well under makeup","Can feel tacky in peak humidity;Not ideal for very oily skin","Normal to dry skin","SPF:50 PA++++|Finish:Dewy"),
+ P("Dot & Key Watermelon Cooling Sunscreen SPF 50",495,"Cooling, fresh feel;Lightweight gel-cream;Easy to reapply","Noticeable fragrance;Not the best pick for sensitive skin","Hot, sweaty summers","SPF:50 PA++++|Finish:Dewy-fresh"),
+ P("Re'equil Ultra Matte Dry Touch Sunscreen Gel",549,"Proper matte finish;Keeps shine down for hours;Good makeup base","Can feel drying on dry skin;Works best over a moisturizer","Oily and combination skin","SPF:50 PA++++|Finish:Matte"),
+ P("Neutrogena Ultra Sheer Dry-Touch Sunscreen",599,"Easy to find;Light and non-greasy;Trusted for years","Noticeable fragrance;Small tube for the price","First-time SPF users","SPF:50+|Finish:Dry-touch"),
+ P("The Derma Co 1% Hyaluronic Sunscreen Aqua Gel",449,"Water-light gel;Hydrating without stickiness;Layers well with skincare","Needs a generous amount to reach labelled SPF;Slightly tacky right after applying","Dehydrated skin","SPF:50 PA++++|Finish:Natural"),
+ P("Cetaphil Sun SPF 50+ Light Gel",849,"Fragrance-free;Gentle on reactive skin;Reliable dermatology brand","Pricey for the quantity;Takes a minute to settle","Sensitive skin","SPF:50+|Finish:Light gel"),
+ P("Lakm\u00E9 Sun Expert Ultra Matte Gel",349,"Very affordable;Widely available;Matte finish","Fragranced;Can feel heavy in peak summer","Students on a budget","SPF:50 PA+++|Finish:Matte"),
+ P("Bior\u00E9 UV Aqua Rich Watery Essence",699,"Feels like a serum;Practically invisible;Great under makeup","Contains alcohol, so it can sting dry skin;Has a light fragrance","Layering under makeup","SPF:50+ PA++++|Finish:Sheer"),
+ P("Beauty of Joseon Relief Sun: Rice + Probiotics",1149,"Creamy, moisturizing feel;Barely any cast;Loved by K-beauty fans","Priciest on this list;Can look dewy on oily skin","Dry and sensitive skin","SPF:50+ PA++++|Finish:Dewy")
+],[["How much sunscreen should I apply?","Roughly two finger-lengths for your face and neck. Using too little is the most common reason SPF 50 performs like a much lower number."],["Do I need sunscreen indoors?","If you sit near a window or spend hours in bright daylight indoors, yes. UVA rays pass through glass."]],
+{rel:['face-wash','moisturizers','morning-routine','vitamin-c-serums']}),
+
+A('beauty/skincare','face-wash',"5 Face Washes That Clean Without Stripping",
+"A face wash should leave skin clean, not tight. Pick the texture that suits your skin, then add a [[sunscreens|sunscreen]] and [[moisturizers|moisturizer]] on top.",
+"face wash cleanser skincare acne oily sensitive",[
+ P("Cetaphil Gentle Skin Cleanser",349,"Non-foaming and calm;Fragrance-free;Removes light makeup","Not enough for very oily skin;Feels plain if you love foam","Dry and sensitive skin","Type:Lotion|Skin:All"),
+ P("Minimalist Salicylic Acid 2% Face Wash",299,"Targets clogged pores;Gel texture rinses clean;Affordable","Can dry out if used twice a day;Not for very sensitive skin","Oily, acne-prone skin","Type:Gel|Skin:Oily"),
+ P("CeraVe Foaming Facial Cleanser",899,"Cleans well without a squeaky finish;Ceramides support the barrier;Fragrance-free","Pricey;Large bottle can be a lot for a trial","Normal to oily skin","Type:Foaming|Skin:Normal to oily"),
+ P("Simple Kind To Skin Refreshing Facial Wash",299,"Mild and no harsh dyes;Easy to find;Fresh feel","Basic formula;Won't tackle stubborn acne","Sensitive skin","Type:Gel|Skin:Sensitive"),
+ P("Neutrogena Oil-Free Acne Wash",399,"Clear salicylic acid formula;Good for regular breakouts;Foams nicely","Can be drying;Fragranced","Breakout-prone skin","Type:Gel|Skin:Acne-prone")
+],[["How often should I wash my face?","Twice a day is enough for most people. If your skin is dry, a splash of water in the morning works fine."]]),
+
+A('beauty/skincare','moisturizers',"5 Moisturizers for Every Skin Type",
+"Even oily skin needs moisture. Match the texture to your skin and always finish with [[sunscreens|sunscreen]] in the morning.",
+"moisturizer moisturiser cream gel dry oily skincare hydration",[
+ P("Neutrogena Hydro Boost Water Gel",799,"Bouncy water-gel texture;Absorbs fast;Comfortable under makeup","Fragranced;Not enough for very dry skin","Normal to combination skin","Texture:Water gel|Skin:Normal"),
+ P("Minimalist Vitamin B5 10% Moisturizer",399,"Simple, barrier-friendly formula;Non-greasy;Fragrance-free","Light for very dry skin;Small pump","Everyday, all skin types","Texture:Lotion-gel|Skin:All"),
+ P("Simple Hydrating Light Moisturiser",399,"Gentle and light;Suits sensitive skin;Easy to layer","Minimal hydration for dry winters;Basic ingredient list","Sensitive skin","Texture:Light lotion|Skin:Sensitive"),
+ P("Plum Green Tea Mattifying Moisturizer",449,"Controls midday shine;Oil-free;Pleasant texture","Can feel drying on dry skin;Slightly scented","Oily skin","Texture:Gel|Skin:Oily"),
+ P("Cetaphil Moisturising Cream",599,"Rich and comforting;Fragrance-free;Good for body too","Too heavy for humid days or oily skin;Thick texture","Dry skin","Texture:Rich cream|Skin:Dry")
+],[["Do I need a moisturizer if my skin is oily?","Yes. Skipping it can make skin produce even more oil. Choose an oil-free gel instead of a cream."]]),
+
+A('beauty/skincare','vitamin-c-serums',"4 Vitamin C Serums Worth the Hype",
+"Vitamin C is a morning-routine staple for brightening. Apply it after cleansing, before [[moisturizers|moisturizer]], and always follow with [[sunscreens|sunscreen]].",
+"vitamin c serum brightening glow dark spots skincare",[
+ P("Minimalist 10% Vitamin C Face Serum",599,"Clear strength that is easy to start with;Fragrance-free;Good value","Can tingle on sensitive skin;Needs to be stored away from heat","Beginners","Strength:10%|Form:Serum"),
+ P("Dot & Key Vitamin C + E Super Bright Serum",545,"Lightweight and non-sticky;Pleasant feel;Easy to find","Fragranced;Not the strongest option","Dull, tired-looking skin","Strength:Blend|Form:Serum"),
+ P("The Derma Co 10% Vitamin C Serum",549,"Gentle formula;Dropper is easy to control;Good price","Can feel slightly sticky;Results take weeks","Uneven skin tone","Strength:10%|Form:Serum"),
+ P("Plum 15% Vitamin C Face Serum",720,"Higher strength for experienced users;Smooth texture;Popular pick","Not ideal for sensitive skin;Start slowly","Stubborn dullness","Strength:15%|Form:Serum")
+],[["When should I use vitamin C?","Most people use it in the morning under sunscreen. Patch test first and introduce it slowly."]]),
+
+/* ---- BEAUTY / HAIRCARE ---- */
+A('beauty/haircare','hair-serums',"5 Hair Serums for Frizz-Free Days",
+"A little goes a long way: two drops on damp ends, not roots. Pair with a good [[hair-masks|hair mask]] and the right [[hair-oils|hair oil]].",
+"hair serum frizz smooth shine haircare",[
+ P("Livon Silky Potion Hair Serum",199,"Budget friendly;Tames flyaways;Light scent","Can feel greasy if overused;Not a repair product","Frizzy, dry ends","Hair type:Frizzy|Finish:Silky"),
+ P("Streax Pro Vitariche Gloss Hair Serum",299,"Glossy finish;Lasts through the day;Light texture","Can weigh down fine hair;Fragranced","Dull hair","Hair type:Dull|Finish:Glossy"),
+ P("L'Or\u00E9al Paris Extraordinary Oil Serum",349,"Lightweight oil serum;Adds shine;Non-sticky","Can build up;Fragranced","Medium to thick hair","Hair type:Any|Finish:Shiny"),
+ P("Mamaearth Onion Hair Serum",349,"Natural feel;Mild scent;Good for daily use","Not a heat protectant;Results are mild","Everyday smoothing","Hair type:Any|Finish:Smooth"),
+ P("TRESemm\u00E9 Keratin Smooth Serum",349,"Great for straightening days;Controls flyaways;Works fast","Can be heavy on fine hair;Fragranced","Wavy, frizzy hair","Hair type:Wavy|Finish:Sleek")
+],[["Where should I apply hair serum?","On damp or dry mid-lengths and ends. Avoid the scalp so hair doesn't look greasy."]]),
+
+A('beauty/haircare','hair-masks',"4 Hair Masks That Actually Repair Damage",
+"Use a mask once a week after shampooing. Focus on lengths and ends, and leave it on for the time on the pack. Follow with a light [[hair-serums|serum]] and stay consistent with the [[hair-growth-routine|hair growth routine]].",
+"hair mask damage repair dry frizz haircare",[
+ P("L'Or\u00E9al Paris Total Repair 5 Hair Mask",549,"Strong repair formula;Smooth and manageable after use;Easy to find","Fragranced;Not ideal for very fine hair","Damaged, coloured hair","Use:Weekly|Hair type:Damaged"),
+ P("Dove Intense Repair Hair Mask",349,"Affordable;Creamy texture;Softens quickly","Can feel heavy on fine hair;Fragranced","Dry hair","Use:Weekly|Hair type:Dry"),
+ P("Mamaearth Onion Hair Mask",399,"Nourishing;Mild scent;Good for scalp and lengths","Results are subtle;Small jar","Regular care","Use:Weekly|Hair type:All"),
+ P("K\u00E9rastase Nutritive Masquintense",3900,"Salon-level softness;Luxurious texture;A little goes far","Very expensive;Not needed for everyday care","A special-occasion splurge","Use:Weekly|Hair type:Thick, dry")
+],[["How often should I use a hair mask?","Once a week is enough for most people. Overdoing it can make hair feel limp."]]),
+
+A('beauty/haircare','shampoo-hair-fall',"5 Shampoos for Hair Fall",
+"No shampoo is magic, but a gentle one that keeps your scalp clean helps. Pair with the steps in the [[hair-growth-routine|hair growth routine]] and a nourishing [[hair-oils|hair oil]].",
+"shampoo hair fall hair loss scalp haircare onion",[
+ P("Mamaearth Onion Shampoo",349,"Pleasant scent;Gentle daily use;Popular","Results take time;Not a medical treatment","Everyday hair fall care","Scalp:Normal|Type:Sulphate-free"),
+ P("WOW Skin Science Onion Oil Shampoo",349,"Lathers well;Feels clean;Affordable","Can dry ends;Strong scent","Oily scalp","Scalp:Oily|Type:Onion oil"),
+ P("Dove Hair Fall Rescue Shampoo",299,"Easy to find;Softens hair;Good value","Contains sulphates;Fragranced","Budget care","Scalp:Normal|Type:Nourishing"),
+ P("Indulekha Bringha Ayurvedic Shampoo",349,"Herbal feel;Gentle;Trusted brand","Mild foam;Herbal smell isn't for everyone","Herbal fans","Scalp:Normal|Type:Ayurvedic"),
+ P("Himalaya Anti-Hair Fall Shampoo",249,"Very affordable;Simple formula;Widely available","Basic conditioning;Can feel drying","Students on a budget","Scalp:Normal|Type:Protein")
+],[["Can shampoo stop hair fall?","A good shampoo supports a healthy scalp, but hair fall has many causes. If it is sudden or heavy, see a dermatologist."]]),
+
+A('beauty/haircare','hair-growth-routine',"The Simple Hair Growth Routine",
+"There are no shortcuts, only habits that protect your hair and scalp. Start with these tools, then add a mild [[shampoo-hair-fall|shampoo]] and a weekly [[hair-masks|mask]]. Save this checklist and tick it off.",
+"hair growth routine scalp massage oiling haircare",[
+ P("Silicone scalp massager brush",199,"Feels great;Helps spread oil evenly;Easy to clean","Not a growth treatment on its own;Don't scrub hard","Weekly oiling","Type:Tool|Use:Weekly"),
+ P("Wide-tooth wooden comb",249,"Gentle on wet hair;Reduces breakage;Lasts for years","Needs cleaning;Wood can crack if dropped","Detangling","Type:Tool|Use:Daily"),
+ P("Redensyl scalp serum",599,"Easy to apply;Targets the scalp;Popular routine step","Results take months;Not for everyone","Thinning hair care","Type:Serum|Use:Daily"),
+ P("Satin pillowcase",399,"Less friction at night;Helps reduce frizz;Also kind to skin","Can be slippery;Needs gentle washing","Sleeping in curls or long hair","Type:Sleep|Use:Nightly"),
+ P("Mamaearth Onion Hair Oil",349,"Light enough for weekly oiling;Easy to find;Pleasant scent","Can be sticky if overused;Results vary","Weekly oiling","Type:Oil|Use:Weekly")
+],[["How long until I see a difference?","Hair grows about half an inch a month, so give any routine at least three months."]],
+{steps:["Oil your scalp gently once a week and leave for 1 to 2 hours","Wash with a mild shampoo, focusing on the scalp","Condition mid-lengths and ends only","Use a wide-tooth comb on damp hair","Skip tight ponytails when you can","Sleep on a satin pillowcase or with a loose braid","Eat enough protein and stay hydrated","Trim ends every 3 months"],stepsTitle:'Your weekly checklist'}),
+
+A('beauty/haircare','hair-oils',"5 Hair Oils Worth Buying",
+"Oiling is a ritual, not a miracle. Apply it before a wash, then use a proper [[shampoo-hair-fall|shampoo]]. Follow the [[hair-growth-routine|routine]] for best results.",
+"hair oil coconut bhringraj onion amla haircare",[
+ P("Parachute Coconut Oil",210,"Simple and cheap;Multi-use;Trusted","Solidifies in cold weather;Heavy for fine hair","Classic pre-wash oiling","Base:Coconut|Weight:Medium"),
+ P("Indulekha Bringha Hair Oil",549,"Herbal blend;Light scent;Popular","Pricey;Herbal smell","Ayurveda fans","Base:Herbal|Weight:Light"),
+ P("Mamaearth Onion Hair Oil",349,"Easy to apply;Good value;Pleasant scent","Can be sticky;Results vary","Everyday oiling","Base:Onion|Weight:Medium"),
+ P("Kama Ayurveda Bringadi Hair Treatment Oil",995,"Premium ayurvedic blend;Rich texture;Lovely for scalp massage","Expensive;Heavy on fine hair","A weekly treat","Base:Herbal|Weight:Rich"),
+ P("Dabur Amla Hair Oil",199,"Very affordable;Traditional;Easy to find","Strong smell;Sticky texture","Budget oiling","Base:Amla|Weight:Medium")
+],[["Should I oil overnight?","A few hours before a wash is usually enough. Leaving oil on overnight can clog pores for some people."]]),
+
+/* ---- BEAUTY / PERFUMES, LIP, BODY, MAKEUP ---- */
+A('beauty/perfumes','perfumes',"4 Perfumes That Smell Expensive (Under \u20B91,500)",
+"You don't need a luxury budget to smell lovely. Apply to pulse points and moisturized skin so it lasts longer. Pair with a matching [[body-lotions|body lotion]] to layer the scent.",
+"perfume fragrance eau de parfum scent women affordable",[
+ P("Bella Vita Luxury Woman EDP",499,"Feminine floral scent;Great for the price;Comes in a nice bottle","Longevity can fade in heat;Not very unique","Everyday wear","Vibe:Fresh floral|Type:EDP"),
+ P("Engage Blush Perfume Spray",299,"Very cheap;Fruity and easy;Good for beginners","Fades quickly;Simple scent","College and casual","Vibe:Fruity|Type:Spray"),
+ P("Layer'r Wottagirl Perfume",349,"Sweet, youthful scent;Small and portable;Affordable","Not long lasting;Sweet scents aren't for everyone","Gifting and travel","Vibe:Sweet|Type:Spray"),
+ P("Skinn by Titan Celeste Perfume",1395,"Feels premium;Well-blended;Good projection","Priciest here;Bottle is small","Special days","Vibe:Soft floral|Type:EDP")
+],[["How do I make perfume last longer?","Spray on moisturized skin at pulse points and avoid rubbing your wrists together."]]),
+
+A('beauty/lip-care','lip-balms',"5 Lip Balms for Soft, Smooth Lips",
+"Dry lips are rarely fixed with one product. Hydrate, protect and exfoliate gently. Add lip care to your [[night-routine|night routine]] too.",
+"lip balm lip care dry lips chapped tinted",[
+ P("Nivea Soft Lip Balm",150,"Nourishing;Easy to find;Subtle scent","Not tinted;Needs reapplying","Everyday hydration","Finish:Balmy|Best time:Day"),
+ P("Maybelline Baby Lips Lip Balm",180,"Tinted options;Lightweight;Fun shades","Fades quickly;Not very healing","Tint and moisture","Finish:Glossy|Best time:Day"),
+ P("Vaseline Lip Therapy Rosy Lips",140,"Petroleum-jelly base seals in moisture;Cheap;Small and portable","Slightly sticky;Little tint","Very dry lips","Finish:Glossy|Best time:Any"),
+ P("Laneige Lip Sleeping Mask",1900,"Overnight treat;Soft, plump lips by morning;Lasts a long time","Pricey;Sweet fragrance","A weekly night treatment","Finish:Rich|Best time:Night"),
+ P("Dot & Key Strawberry Lip Balm",245,"Fruity scent;Glossy finish;Soft feel","Fades in a few hours;Scent isn't for everyone","Gifts and daily wear","Finish:Glossy|Best time:Day")
+],[["Why do my lips stay dry?","Licking your lips, dehydration and fragranced products can all make dryness worse."]]),
+
+A('beauty/body-care','body-lotions',"4 Body Lotions That Last All Day",
+"Apply right after a shower when skin is still slightly damp. Match the texture to the weather, then finish with a [[perfumes|perfume]] you love.",
+"body lotion body care moisturizer dry skin cocoa vanilla",[
+ P("Vaseline Intensive Care Cocoa Glow",400,"Rich moisture;Smooth glow;Affordable","Can feel heavy in summer;Cocoa scent","Dry skin, winters","Texture:Rich|Skin:Very dry"),
+ P("Nivea Nourishing Body Milk",349,"Absorbs quickly;Lasts long;Widely available","Fragranced;Not for eczema-prone skin","Everyday use","Texture:Milk|Skin:Normal to dry"),
+ P("Cetaphil Moisturizing Lotion",599,"Fragrance-free;Gentle;Trusted","Pricey;Light scent-free feel","Sensitive skin","Texture:Lotion|Skin:Sensitive"),
+ P("Plum BodyLovin Vanilla Vibes Body Lotion",349,"Lovely vanilla scent;Soft skin;Non-sticky","Fragranced;Not for sensitive skin","Scent lovers","Texture:Lotion|Skin:Normal")
+],[["Should I use body lotion daily?","Yes, especially after bathing. It helps prevent dryness and flaking."]]),
+
+A('beauty/makeup','makeup-basics',"4 Makeup Basics for a 5-Minute Face",
+"Skip the 12-step routine. Start with a [[sunscreens|sunscreen]], then these four steps for a fresh, easy look.",
+"makeup basics kajal compact lipstick mascara everyday",[
+ P("Maybelline Colossal Kajal",249,"Smudge-resistant;Rich black;Easy to apply","Can transfer on oily lids;Sharpening needed","Everyday eyes","Finish:Matte|Use:Eyes"),
+ P("Maybelline Fit Me Matte + Poreless Compact",349,"Controls shine;Quick touch-ups;Good shade range","Can look cakey if overapplied;Compact is bulky","Oily skin","Finish:Matte|Use:Face"),
+ P("Sugar Smudge Me Not Liquid Lipstick",499,"Long-wearing;Bold colour;Transfer-resistant","Can feel drying;Needs a balm underneath","Statement lips","Finish:Matte|Use:Lips"),
+ P("Maybelline Lash Sensational Sky High Mascara",799,"Lengthening;Flexible brush;No clumps","Pricey;Can smudge in heat","Lash lovers","Finish:Volume|Use:Eyes")
+],[["What should a beginner buy first?","Start with a kajal, a lip tint and a compact. Add more only when you feel the gap."]]),
+
+/* ---- FASHION ---- */
+A('fashion/footwear','white-sneakers',"4 White Sneakers That Go With Everything",
+"A clean pair of white sneakers works with jeans, dresses and even trousers. Great for [[college-outfits|college outfits]] and the [[airport-outfits|airport outfit formula]].",
+"white sneakers shoes footwear casual college airport",[
+ P("Puma Smash V2 Sneakers",2799,"Classic court style;Comfortable;Easy to clean","Limited arch support;Runs slightly narrow","Everyday wear","Style:Court|Sole:Flat"),
+ P("adidas Grand Court Sneakers",3999,"Clean and sporty;Cushioned;Durable","Priciest here;Can crease","Long walking days","Style:Court|Sole:Cushioned"),
+ P("Reebok Court Advance Sneakers",3499,"Soft leather-look upper;Comfortable;Stylish","Not very breathable;Needs regular cleaning","Smart casual","Style:Court|Sole:Cushioned"),
+ P("Red Tape White Casual Sneakers",1999,"Budget friendly;Simple design;Lightweight","Less cushioning;Wears faster","Students","Style:Casual|Sole:Flat")
+],[["How do I keep white sneakers clean?","Wipe after wear, use a soft brush with mild soap monthly and air-dry away from direct sun."]]),
+
+A('fashion/outfits','airport-outfits',"The Airport Outfit Formula",
+"Comfort first, polish second. Think soft layers, easy shoes and a bag that holds everything. Bring your [[white-sneakers|white sneakers]] and check the [[travel-finds|travel finds]] before you fly.",
+"airport outfit travel comfy lounge set hoodie",[
+ P("Ribbed knit lounge co-ord set",1299,"Comfortable for long flights;Looks put together;Stretchy","Can pill over time;Needs gentle wash","Long-haul comfort","Fit:Relaxed|Fabric:Cotton blend"),
+ P("Wide-leg parachute pants",899,"Roomy and breathable;Trendy;Easy to style","Can wrinkle;Long hems need hemming","Comfort with style","Fit:Wide|Fabric:Nylon blend"),
+ P("Oversized zip-up hoodie",999,"Layers well;Cold-cabin ready;Pockets","Can feel bulky;Needs washing often","Cold flights","Fit:Oversized|Fabric:Cotton fleece"),
+ P("Slip-on white sneakers",1499,"Easy security lines;Comfortable;Goes with everything","Less support than laces;Can show dirt","Fast airport days","Fit:True to size|Fabric:Canvas"),
+ P("Compact crossbody bag",599,"Keeps documents safe;Lightweight;Hands-free","Small;Cheaper straps can wear","Boarding pass, phone, passport","Fit:Small|Fabric:Vegan leather")
+],[["What should I avoid wearing on a flight?","Stiff fabrics, tight waistbands and shoes that are hard to remove."]]),
+
+A('fashion/outfits','college-outfits',"4 College Outfit Formulas",
+"Mix and match simple pieces for a week of outfits. Start with [[white-sneakers|white sneakers]], then check the [[college-finds|college finds]].",
+"college outfits casual jeans tee denim shirt tote student",[
+ P("Straight-fit high-rise jeans",999,"Goes with everything;Flattering;Durable","Can feel stiff at first;Sizing varies","Everyday","Fit:Straight|Fabric:Denim"),
+ P("Boxy cropped tee (pack of 3)",699,"Great value;Easy to layer;Breathable","Thin fabric on some brands;May shrink","Mix and match","Fit:Boxy|Fabric:Cotton"),
+ P("Oversized denim shirt",849,"Works as a layer or top;Timeless;Comfortable","Wrinkles;Can be heavy","Cool days","Fit:Oversized|Fabric:Denim"),
+ P("Canvas tote bag",349,"Carries books;Lightweight;Cheap","Not waterproof;No zip","Everyday carry","Fit:Large|Fabric:Canvas")
+],[["How many outfits do I really need?","Five to seven mix-and-match pieces cover a full college week."]]),
+
+A('fashion/outfits','office-wear',"Office Wear Basics That Look Expensive",
+"Fit and fabric matter more than logos. Invest in a few staples and repeat them. See the [[capsule-wardrobe|capsule wardrobe]] for a bigger system.",
+"office wear work formal blazer trousers shirt loafers",[
+ P("Tailored straight-leg trousers",1299,"Looks sharp;Comfortable all day;Easy to style","Needs ironing;Fit varies","Everyday office","Fit:Straight|Fabric:Poly-viscose"),
+ P("Crisp cotton button-down",999,"Classic;Breathable;Versatile","Wrinkles;Can be see-through in white","Presentations","Fit:Regular|Fabric:Cotton"),
+ P("Lightweight structured blazer",1999,"Instantly polished;Layerable;Works with everything","Priciest here;Needs dry cleaning","Meetings","Fit:Tailored|Fabric:Poly blend"),
+ P("Block-heel loafers",1499,"Comfortable;Polished;Good for long days","Break-in period;Limited colours","Walking and standing","Fit:True to size|Fabric:Faux leather")
+],[["What is the easiest way to look polished?","Well-fitted basics in neutral colours, ironed and clean."]]),
+
+A('fashion/wardrobe','capsule-wardrobe',"The 6-Piece Capsule Wardrobe",
+"Six pieces, dozens of outfits. Choose neutrals so everything mixes. Finish with [[white-sneakers|white sneakers]] and use [[office-wear|office wear]] for work days.",
+"capsule wardrobe minimal basics neutrals dress trousers tee",[
+ P("Plain white tee",399,"Goes with everything;Breathable;Easy to layer","Shows sweat and stains;Thin ones are see-through","Base layer","Fit:Regular|Fabric:Cotton"),
+ P("Straight-leg blue jeans",1199,"Timeless;Durable;Casual and smart","Sizing varies;Slow to dry","Everyday","Fit:Straight|Fabric:Denim"),
+ P("Black tailored trousers",1299,"Office to dinner;Slimming;Versatile","Shows lint;Needs ironing","Work and evenings","Fit:Tailored|Fabric:Poly-viscose"),
+ P("Neutral blazer",1999,"Elevates anything;Layerable;Timeless","Priciest;Dry clean","Polished looks","Fit:Tailored|Fabric:Poly blend"),
+ P("Midi slip dress",1099,"One piece, many looks;Layers with tee or cardigan;Elegant","Can cling;Delicate fabric","Dinners and dates","Fit:Fitted|Fabric:Satin"),
+ P("Lightweight trench or long shirt jacket",1799,"Cover-up for any outfit;Timeless;Weather ready","Bulky to pack;Needs care","Layering","Fit:Relaxed|Fabric:Cotton blend")
+],[["What colours work for a capsule wardrobe?","Neutrals like white, black, beige, navy and denim, plus one accent you love."]]),
+
+/* ---- AMAZON FINDS ---- */
+A('amazon-finds/kitchen','kitchen-finds',"5 Kitchen Finds Worth Buying",
+"Small tools that save time and space. Great for first apartments, hostels and busy weeknights. Also see the [[hostel-essentials|hostel essentials list]].",
+"kitchen amazon finds tools cooking hostel gadgets",[
+ P("Heat-resistant silicone spatula set",249,"Won't scratch pans;Easy to clean;Multi-use","Can stain;Cheap ones may warp","Non-stick cooking","Material:Silicone"),
+ P("Manual vegetable chopper",399,"No electricity needed;Saves time;Easy to store","Blades need care;Cleaning takes a minute","Salads and prep","Material:Steel + plastic"),
+ P("Stackable airtight containers set",499,"Keeps snacks fresh;Stacks neatly;Microwave-friendly","Plastic can stain;Lids can wear","Leftovers and pantry","Material:Plastic"),
+ P("Reusable silicone food bags",449,"Cuts down on cling film;Freezer safe;Easy to wash","Stays greasy longer;Pricey upfront","Lunch and prep","Material:Silicone"),
+ P("1L electric kettle",549,"Boils in minutes;Compact;Great for hostels","Check hostel rules;Needs descaling","Tea, noodles, instant meals","Material:Stainless steel")
+],[["Are kitchen gadgets worth it?","Only the ones you'll use weekly. Start with tools that save time or space."]],{tagsExtra:'hostel'}),
+
+A('amazon-finds/bathroom','bathroom-finds',"5 Bathroom Finds That Make It Feel Like a Spa",
+"Little upgrades that make daily routines nicer. Perfect for hostels and tiny bathrooms. Add to your [[morning-routine|morning routine]] and [[night-routine|night routine]].",
+"bathroom amazon finds spa shower organizer towel hostel",[
+ P("Suction shower caddy",349,"No drilling needed;Holds bottles neatly;Easy install","May slip on wet tiles;Weight limit","Small bathrooms","Material:Plastic"),
+ P("Microfiber hair towel wrap",249,"Dries hair quickly;Gentle on hair;Hands-free","Can loosen;Needs washing","Long hair","Material:Microfiber"),
+ P("Anti-slip bath mat",399,"Safer floors;Quick-dry;Soft underfoot","Can mould if not dried;Colours fade","Every bathroom","Material:Rubber-backed"),
+ P("Silicone body scrubber",149,"Hygienic and dries fast;Lasts long;Lathers well","Less exfoliating than loofah;Small","Sensitive skin","Material:Silicone"),
+ P("Over-door towel hooks",199,"No drilling;Easy to install;Saves space","Door thickness matters;Weight limit","Rented rooms","Material:Metal")
+],[["How do I keep a small bathroom tidy?","Use vertical space: hooks, caddies and over-door storage."]],{tagsExtra:'hostel'}),
+
+A('amazon-finds/bedroom','bedroom-finds',"5 Bedroom Finds for a Cozier Room",
+"Soft light, soft fabrics, less clutter. These finds turn any bedroom into a calm space. See [[cozy-corners|cozy corner ideas]] and the [[night-routine|night routine]].",
+"bedroom amazon finds cozy fairy lights pillowcase blanket hostel",[
+ P("Warm LED fairy lights",249,"Instant cozy glow;Cheap;Easy to hang","Battery or plug needed;Can tangle","Walls and shelves","Material:Copper wire"),
+ P("Satin pillowcase (2-pack)",449,"Gentler on hair and skin;Cool feel;Nice look","Can slip;Delicate wash","Frizz-prone hair","Material:Satin"),
+ P("Contoured sleep mask",199,"Blocks light fully;Comfortable;Portable","Strap can loosen;Not for everyone","Light sleepers","Material:Memory foam"),
+ P("Bedside hanging organizer",299,"Keeps phone and books close;No drilling;Space saving","Weight limit;Fabric can sag","Hostel beds","Material:Fabric"),
+ P("Fluffy throw blanket",599,"Instant cozy;Great for sofa or bed;Soft","Sheds a bit;Bulky","Winter nights","Material:Fleece")
+],[["What makes a bedroom feel cozy?","Warm lighting, soft textures and a clear surface near the bed."]],{tagsExtra:'hostel'}),
+
+A('amazon-finds/office','office-finds',"5 Office Desk Finds Worth Buying",
+"Tiny changes make a desk feel calmer. Build the look with the [[desk-setup|desk setup guide]] and stay focused with [[productivity-tools|productivity tools]].",
+"office desk amazon finds organizer desk mat laptop stand pens",[
+ P("Large desk mat",499,"Protects the desk;Smooth mouse glide;Looks neat","Can curl at edges;Needs wiping","Laptop and mouse","Material:Vegan leather"),
+ P("Foldable laptop stand",649,"Better posture;Portable;Cooling airflow","Needs a separate keyboard;Can wobble","Long work hours","Material:Aluminium"),
+ P("Cable organizer clips",149,"Neat cords;Very cheap;Easy stick-on","Adhesive can weaken;Small","Tidy desks","Material:Silicone"),
+ P("Pastel gel pen set",199,"Smooth writing;Fun colours;Great for notes","Ink runs out;Smudges on some paper","Note taking","Material:Gel ink"),
+ P("Desktop file organizer",449,"Keeps papers tidy;Stackable;Looks clean","Bulky;Hard to clean","Papers and notebooks","Material:Mesh metal")
+],[["What is the first thing to buy for a desk?","A laptop stand and desk mat make the biggest difference."]],{tagsExtra:'hostel'}),
+
+A('amazon-finds/college','college-finds',"5 College Finds Every Girl Needs",
+"Small things that make campus life easier. Add to your [[hostel-essentials|hostel essentials]] and [[study-essentials|study essentials]].",
+"college amazon finds student laptop sleeve backpack bottle umbrella hostel",[
+ P("Padded laptop sleeve",449,"Protects from scratches;Slim;Fits many sizes","Not waterproof;Limited padding","Daily carry","Material:Neoprene"),
+ P("Anti-theft mini backpack",699,"Hidden zips;Compact;Stylish","Small for big textbooks;Straps can dig","Campus days","Material:Water-resistant fabric"),
+ P("Highlighter set",199,"Bright and pastel;Cheap;Neat notes","Can bleed on thin paper;Dries out","Revision","Material:Ink"),
+ P("Insulated steel bottle",499,"Keeps water cold;Durable;Leak-proof","Heavy;Can dent","Long lectures","Material:Stainless steel"),
+ P("Foldable compact umbrella",349,"Fits in any bag;Lightweight;Handy in monsoon","Wind can flip it;Cheaper ones break","Rainy days","Material:Polyester")
+],[["What should I pack first for college?","A good bag, a bottle, a laptop sleeve and comfortable shoes."]],{tagsExtra:'hostel'}),
+
+A('amazon-finds/travel','travel-finds',"5 Travel Finds That Make Packing Easy",
+"Pack lighter, stay organized. Combine with the [[airport-outfits|airport outfit formula]].",
+"travel amazon finds packing cubes toiletry neck pillow luggage",[
+ P("Packing cubes set",449,"Keeps bags organized;Compresses clothes;Reusable","Adds weight;Zips can stick","Trips of any length","Material:Nylon"),
+ P("Hanging toiletry bag",399,"Hooks anywhere;Roomy;Water-resistant","Can be bulky;Zip quality varies","Hotels and hostels","Material:Fabric"),
+ P("Travel neck pillow",349,"Supports head;Compact;Soft","Not for everyone;Can be warm","Long journeys","Material:Memory foam"),
+ P("Silicone travel bottles",199,"Leak-resistant;Reusable;Airline friendly","Small;Can be fiddly to fill","Toiletries","Material:Silicone"),
+ P("Digital luggage scale",249,"Avoids overweight fees;Small;Accurate enough","Needs batteries;Limited capacity","Airline trips","Material:Plastic")
+],[["How do I pack lighter?","Choose a colour palette so pieces mix, and use packing cubes."]],{tagsExtra:''}),
+
+A('amazon-finds/car','car-finds',"5 Car Finds You'll Actually Use",
+"Handy for daily drives and long trips. Nothing fancy, only useful things.",
+"car amazon finds phone holder organizer vacuum sunshade",[
+ P("Car phone holder",299,"Hands-free navigation;Easy install;Adjustable","Grip can loosen;Check your vent type","Daily drives","Material:ABS plastic"),
+ P("Seat gap organizer",349,"Stops things falling;Extra storage;Easy fit","Can rattle;Not universal","Small items","Material:Faux leather"),
+ P("Mini car vacuum",799,"Quick cleans;Portable;Rechargeable","Weak on heavy dirt;Battery life","Crumbs and dust","Material:Plastic"),
+ P("Windshield sunshade",249,"Keeps cabin cooler;Foldable;Cheap","Bulky;Needs the right fit","Summer parking","Material:Reflective fabric"),
+ P("Car trash bin",199,"Keeps car tidy;Compact;Easy to empty","Small;Liners needed","Road trips","Material:Fabric")
+],[["What car accessories are worth it?","A phone holder, sunshade and a small trash bin cover most needs."]]),
+
+A('amazon-finds/beauty','beauty-finds',"5 Beauty Tools Under \u20B9500",
+"Beauty tools that are cheap, useful and easy to use. Add them to your [[night-routine|night routine]] or [[glow-up-checklist|glow-up checklist]].",
+"beauty tools amazon finds ice roller gua sha heatless curls organizer",[
+ P("Ice roller",299,"Cooling and calming;Feels good in the morning;Cheap","Not a miracle for puffiness;Keep it in the freezer","Morning routine","Material:Stainless steel"),
+ P("Gua sha stone",349,"Relaxing massage;Lasts for years;Pretty","Needs a facial oil;Results are temporary","Evening routine","Material:Stone"),
+ P("Heatless curl headband",299,"Curls while you sleep;No heat damage;Easy to use","Takes practice;Uncomfortable for some","Soft waves","Material:Satin"),
+ P("Makeup organizer",499,"Everything in view;Keeps desk neat;Stackable","Takes desk space;Needs wiping","Vanity","Material:Acrylic"),
+ P("Reusable makeup remover pads",249,"Less waste;Soft on skin;Washable","Need regular washing;Can stain","Sensitive skin","Material:Microfiber")
+],[["Are beauty tools worth it?","Only if you'll use them regularly. Start with one or two."]]),
+
+/* ---- HOME DECOR ---- */
+A('home-decor/cozy-corners','cozy-corners',"Cozy Bedroom Corner Ideas",
+"A corner is the easiest place to start. Layer texture, warm light and one plant. See more [[bedroom-finds|bedroom finds]].",
+"home decor cozy corner rug macrame plant cushions bedroom aesthetic",[
+ P("Jute area rug",999,"Adds warmth and texture;Natural look;Easy to style","Can shed;Rough underfoot","Reading corner","Material:Jute"),
+ P("Boho macram\u00E9 wall hanging",449,"Instant character;Lightweight;Renter friendly","Collects dust;Needs a nail","Blank walls","Material:Cotton cord"),
+ P("Faux plant with ceramic pot",549,"No care needed;Always green;Looks real","Dust collects;Quality varies","Low-light rooms","Material:Plastic + ceramic"),
+ P("Floor cushion set",699,"Extra seating;Cozy;Easy to move","Needs fluffing;Covers may fade","Hostel or reading nook","Material:Cotton")
+],[["How do I make a small room look bigger?","Use light colours, mirrors and keep the floor clear."]]),
+
+A('home-decor/storage','small-space-storage',"Small-Space Storage That Looks Pretty",
+"Storage should be part of the décor. Pick neutral, matching pieces so clutter looks intentional. See [[bathroom-finds|bathroom finds]] for more.",
+"storage small space baskets under bed shelves organizer hostel decor",[
+ P("Rattan storage baskets set",799,"Looks good on open shelves;Sturdy;Multi-use","Not waterproof;Can be bulky","Blankets and toys","Material:Rattan"),
+ P("Under-bed storage boxes",899,"Uses dead space;Keeps dust out;Stackable","Hard to reach;Zips can break","Seasonal clothes","Material:Fabric"),
+ P("Floating wall shelves",599,"Adds display space;Modern;Easy install","Weight limits;Needs drilling","Books and plants","Material:Engineered wood"),
+ P("Over-door organizer",349,"No drilling;Holds a lot;Cheap","Door may not close fully;Weight limit","Hostels","Material:Fabric")
+],[["How do I add storage in a tiny room?","Go vertical: over-door, wall shelves and under-bed storage."]],{tagsExtra:'hostel'}),
+
+A('home-decor/workspaces','desk-setup',"An Aesthetic Desk Setup on a Budget",
+"A calm desk makes work easier. Start with a mat, a light and one plant. Pick up more [[office-finds|office finds]] and boost focus with [[study-essentials|study essentials]].",
+"desk setup aesthetic workspace lamp monitor riser plant home decor study",[
+ P("Wooden monitor riser",799,"Neater desk;Better posture;Extra storage underneath","Needs desk space;Heavy","Laptop users","Material:Wood"),
+ P("Warm-light desk lamp",899,"Easy on the eyes;Adjustable;Cozy evenings","Bulb replacement;Cable length","Night studying","Material:Metal"),
+ P("Desk mat",499,"Protects surface;Smooth to write on;Neat","Can curl;Wipes needed","Every desk","Material:Vegan leather"),
+ P("Mini desk plant",249,"Adds calm;Low maintenance;Cute","Faux dusts;Small","Desk corner","Material:Plastic")
+],[["What is the best lighting for a desk?","Warm, adjustable light placed to the side so it doesn't create glare."]]),
+
+/* ---- LIFESTYLE ---- */
+A('lifestyle/routines','morning-routine',"The Soft Morning Routine",
+"Ten calm minutes beat an hour of pressure. Start with water, skincare and a plan. Use the [[face-wash|face wash]], [[moisturizers|moisturizer]] and [[sunscreens|sunscreen]] from our skincare guides.",
+"morning routine self care skincare habits water",[
+ P("Insulated water bottle",499,"Keeps water cold;Encourages hydration;Leak-proof","Heavy;Can dent","Daily hydration","Material:Steel"),
+ P("Silk scrunchie set",249,"Kind to hair;Pretty;Cheap","Can stretch;Not strong hold","Everyday hair","Material:Satin"),
+ P("Soft face towel set",299,"Gentle on skin;Quick dry;Cheap","Needs frequent washing;Can pill","Skincare","Material:Cotton")
+],[["Do I need a long morning routine?","No. Five to ten mindful minutes is enough."]],
+{steps:["Drink a glass of water before you touch your phone","Cleanse or splash your face","Moisturizer, then sunscreen (yes, even indoors)","Stretch for five minutes","Make your bed","Write your top three tasks","Eat something real","Leave ten minutes of buffer before you leave"],stepsTitle:'Your morning checklist'}),
+
+A('lifestyle/routines','night-routine',"The Night Routine That Resets Everything",
+"A good night routine helps you sleep better and wake up calmer. Add a [[lip-balms|lip mask]] and get the [[bedroom-finds|bedroom finds]] for a better sleep space.",
+"night routine sleep self care skincare wind down",[
+ P("Silk sleep mask",199,"Blocks light;Soft on eyes;Portable","Strap may slip;Not for everyone","Light sleepers","Material:Silk"),
+ P("Caffeine-free herbal tea set",349,"Calming ritual;Variety of flavours;Caffeine-free","Taste is personal;Not a treatment","Winding down","Material:Herbal"),
+ P("Wind-down journal",299,"Clears your mind;Guided prompts;Pretty","Needs consistency;Space is limited","Overthinkers","Material:Paper")
+],[["How long before bed should I stop using my phone?","Aim for at least 30 minutes if you can."]],
+{steps:["Set a phone curfew 30 minutes before bed","Remove makeup and cleanse","Apply moisturizer and a lip balm","Lay out tomorrow's outfit","Write down three things for tomorrow","Dim the lights or switch on a warm lamp","Read or listen to something soft"],stepsTitle:'Your night checklist'}),
+
+A('lifestyle/challenges','glow-up-checklist',"The Glow-Up Checklist",
+"A glow-up is habits, not a haircut. Tick off what you already do and pick two new things to start. Support it with the [[morning-routine|morning routine]], [[sunscreens|SPF]] and [[beauty-finds|beauty tools]].",
+"glow up checklist self care habits skincare hair fitness confidence",[
+ P("Habit tracker journal",299,"Keeps you honest;Visual progress;Pretty","Needs daily use;Paper quality varies","Building habits","Material:Paper"),
+ P("Ice roller",299,"Cooling;Fun to use;Cheap","Results are temporary;Keep frozen","Morning puffiness","Material:Steel"),
+ P("Resistance band set",399,"Easy home workouts;Portable;Cheap","Can snap over time;Needs guidance","Beginner fitness","Material:Latex")
+],[["How long does a glow-up take?","Small habits show in weeks, but real change takes months."]],
+{steps:["Wear sunscreen daily","Drink 2 to 3 litres of water","Sleep 7 to 8 hours","Move for 20 minutes","Keep a simple skincare routine","Wash hair on a schedule that suits you","Trim your ends and clean your brushes","Tidy your room and your wardrobe","Pick three outfits you love","Limit late-night scrolling","Read 10 pages a day","Say yes to one new thing this week"],stepsTitle:'Tick off what you already do'}),
+
+A('lifestyle/challenges','thirty-day-challenge',"The 30 Day Glow-Up Challenge",
+"One tiny habit a day. No perfection, just show up. Combine it with the [[glow-up-checklist|glow-up checklist]] and the [[morning-routine|morning routine]].",
+"30 day challenge glow up habits daily tiny habits",[
+ P("Habit tracker journal",299,"Keeps you honest;Visual progress;Pretty","Needs daily use;Paper quality varies","Building habits","Material:Paper"),
+ P("Skipping rope",249,"Cheap cardio;Portable;Fun","Needs space;Takes practice","Quick workouts","Material:Nylon"),
+ P("Water tracker bottle",449,"Reminds you to drink;Large;Leak-proof","Heavy;Awkward in small bags","Hydration","Material:Plastic")
+],[["What if I miss a day?","Skip the guilt, pick up where you left off."]],
+{steps:"Drink water first thing|Wear sunscreen|Take a 15 minute walk|Cleanse your face at night|Stretch for 10 minutes|Tidy your desk|Write three good things|No phone for the first hour|Try a new hairstyle|Read 10 pages|Meal prep something simple|Go for an early bedtime|Declutter one drawer|Call a friend|Learn one new recipe|Plan next week|Do a face mask|Drink no sugary drinks|Take the stairs|Journal for five minutes|Do a wardrobe edit|Oil your scalp|Practise a hobby|Clean your makeup brushes|Take a screen-free evening|Compliment yourself|Try 20 minutes of exercise|Review your month|Treat yourself to something small|Celebrate finishing".split('|'),stepsTitle:'Your 30 days',stepLabel:'Day',stepGrid:true}),
+
+A('lifestyle/essentials','hostel-essentials',"The Hostel Essentials List",
+"Everything you actually need for hostel life, and nothing you don't. Start with the basics, then see [[bathroom-finds|bathroom finds]] and [[study-essentials|study essentials]].",
+"hostel essentials college dorm packing list room kettle organizer",[
+ P("1L electric kettle",549,"Boils fast;Compact;Handy for noodles and tea","Check hostel rules;Needs descaling","Quick meals","Type:Appliance|Use:Daily"),
+ P("Extension board with USB ports",699,"Charges many things;Surge protection;Saves sockets","Bulky;Fewer sockets than you think","Charging","Type:Electronics|Use:Daily"),
+ P("Foldable clothes drying rack",599,"Dries laundry indoors;Folds flat;Sturdy","Takes floor space;Can wobble","Laundry days","Type:Furniture|Use:Weekly"),
+ P("Hanging closet organizer",399,"More space;No drilling;Cheap","Weight limit;Fabric sags","Small wardrobes","Type:Storage|Use:Daily"),
+ P("Clip-on mini fan",449,"Cool desk or bed;Rechargeable;Portable","Weak in peak heat;Noisy on high","Summer nights","Type:Appliance|Use:Daily"),
+ P("Over-the-door hooks",199,"Extra hanging space;No drilling;Cheap","Weight limit;Door thickness","Towels and bags","Type:Storage|Use:Daily"),
+ P("Laundry bag",249,"Keeps clothes separate;Folds flat;Easy to carry","Needs washing;Can smell","Laundry trips","Type:Storage|Use:Weekly")
+],[["What should I pack first for a hostel?","Bedding, a lock, an extension board, a bottle and a small first-aid kit."]],{tagsExtra:'hostel'}),
+
+A('lifestyle/essentials','study-essentials',"Study Essentials for Better Focus",
+"A calm study setup helps you start faster. Build it with the [[desk-setup|desk setup guide]] and keep the [[productivity-tools|productivity tools]] nearby.",
+"study essentials focus exams planner lamp book stand earplugs student",[
+ P("Adjustable book stand",449,"Saves your neck;Holds heavy books;Foldable","Can wobble;Bulky","Textbooks","Type:Furniture|Use:Daily"),
+ P("Rechargeable study lamp",699,"Warm light;Portable;No cables","Battery life varies;Small","Late-night study","Type:Lighting|Use:Daily"),
+ P("Undated weekly planner",349,"Flexible;Visual;Cute","Needs discipline;Paper can bleed","Planning","Type:Paper|Use:Weekly"),
+ P("Page flags and sticky notes",149,"Easy revision;Bright;Cheap","Fall off;Small","Textbooks","Type:Stationery|Use:Daily"),
+ P("Foam earplugs",199,"Blocks noise;Cheap;Comfortable","Not for long wear;Hygiene","Noisy hostels","Type:Comfort|Use:Daily")
+],[["How do I stay focused while studying?","Use a timer, clear your desk and keep your phone out of reach."]],{tagsExtra:'hostel'}),
+
+A('lifestyle/productivity','productivity-tools',"4 Productivity Tools That Actually Help",
+"Tools don't do the work, but they make starting easier. Pair with the [[study-essentials|study essentials]] and a calm [[desk-setup|desk setup]].",
+"productivity tools planner timer notebook whiteboard focus habits",[
+ P("Time-blocking planner",399,"Clear daily plan;Visual;Helps prioritising","Needs daily use;Paper quality varies","Busy schedules","Type:Planner|Use:Daily"),
+ P("Visual sand or Pomodoro timer",299,"Screen-free focus;Simple;Fun","Not precise;Fragile","Focus sprints","Type:Timer|Use:Daily"),
+ P("Dot-grid notebook",249,"Flexible layouts;Great for bullet journaling;Pretty","Paper can bleed;Space is limited","Notes and lists","Type:Notebook|Use:Daily"),
+ P("Desktop whiteboard planner",449,"Always visible;Reusable;Easy to update","Needs markers;Takes desk space","Weekly planning","Type:Board|Use:Weekly")
+],[["What is the best productivity tool?","The one you'll use every day. Start with a simple planner."]])
+];
+
+/* tagsExtra handled: add hostel tag */
+ARTICLES.forEach(a=>{if(a.tagsExtra)a.tags+=' '+a.tagsExtra});
+const BY=Object.fromEntries(ARTICLES.map(a=>[a.id,a]));
+const ALLP=ARTICLES.flatMap(a=>a.p.map(p=>({...p,a})));
+const subOf=a=>SUBS[a.c].find(x=>x[0]===a.s);
+const subName=a=>subOf(a)[1];
+
+/* ============ COLLECTIONS ============ */
+const COLL={
+  'under-500':{title:'Products Under \u20B9500',blurb:"Real finds that cost less than a nice coffee date, pulled from every guide on the site.",c:'amazon-finds',f:p=>p.pr<=500,group:false},
+  'best-amazon-finds':{title:'Best Amazon Finds',blurb:'Every Amazon find in one place, sorted by room and reason.',c:'amazon-finds',f:p=>p.a.c==='amazon-finds',group:true},
+  'hostel-girls':{title:'Everything For Hostel Girls',blurb:'Kitchen, bathroom, bedroom, study and desk essentials in one big list.',c:'lifestyle',f:p=>p.a.tags.includes('hostel'),group:true}
+};
+function collItems(k){const seen=new Set();return ALLP.filter(p=>COLL[k].f(p)&&!seen.has(p.n)&&seen.add(p.n))}
+
+/* ============ ART ============ */
+function art(seed,cat,ratio,chip){
+  const r=rng(seed),p=PAL[cat]||PAL.beauty;
+  const v=Math.floor(r()*3),bg=p[r()<.5?0:2];
+  const arch=(x,w,y,fill,o=1)=>`<path d="M${x.toFixed(1)} 500V${(y+w/2).toFixed(1)}a${(w/2).toFixed(1)} ${(w/2).toFixed(1)} 0 0 1 ${w.toFixed(1)} 0V500Z" fill="${fill}" opacity="${o}"/>`;
+  let s=`<rect width="400" height="500" fill="${bg}"/>`;
+  if(v===0){const w=180+r()*80,x=30+r()*(340-w),y=110+r()*90;s+=arch(x,w,y,p[1]);s+=`<circle cx="${(60+r()*280).toFixed(1)}" cy="${(60+r()*90).toFixed(1)}" r="${(34+r()*40).toFixed(1)}" fill="${p[3]}" opacity=".9"/>`;const w2=80+r()*50;s+=arch(r()*(400-w2),w2,330+r()*80,p[4],.85)}
+  else if(v===1){const w=150+r()*30;s+=arch(30,w,200+r()*60,p[1]);s+=arch(30+w+20,w,120+r()*60,p[3],.9);s+=`<circle cx="${(100+r()*200).toFixed(1)}" cy="${(70+r()*50).toFixed(1)}" r="${(26+r()*24).toFixed(1)}" fill="${p[4]}" opacity=".8"/>`}
+  else{const cx=120+r()*160,cy=300+r()*60;s+=`<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(140+r()*40).toFixed(1)}" fill="${p[1]}"/><circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${(70+r()*30).toFixed(1)}" fill="${p[3]}" opacity=".85"/>`;for(let i=0;i<3;i++)s+=`<rect x="0" y="${40+i*22}" width="${(120+r()*180).toFixed(1)}" height="6" rx="3" fill="${p[4]}" opacity=".35"/>`}
+  s+=`<circle cx="${(r()*400).toFixed(1)}" cy="${(r()*500).toFixed(1)}" r="${(90+r()*60).toFixed(1)}" fill="none" stroke="${p[4]}" stroke-width="1.5" opacity=".3"/>`;
+  return `<div class="art"${ratio?` style="aspect-ratio:${ratio}"`:''}><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${s}</svg>${chip?`<span class="chip">${esc(chip)}</span>`:''}</div>`;
+}
+
+/* ============ SMALL COMPONENTS ============ */
+const ratioFor=id=>['4/5','3/4','1/1','4/6','5/7'][hash(id)%5];
+const metaOf=a=>a.steps?`${a.steps.length}-step checklist`:`${a.p.length} picks`;
+const pin=a=>`<a class="pin" href="#/a/${a.id}">${art(a.id,a.c,ratioFor(a.id),subName(a))}<h3>${a.title}</h3><p class="pmeta">${metaOf(a)}</p></a>`;
+const link=t=>t.replace(/\[\[(.+?)\|(.+?)\]\]/g,(m,id,txt)=>`<a href="#/a/${id}">${txt}</a>`);
+const amzBtn=(n,cls='')=>`<a class="btn ${cls}" href="${amz(n)}" target="_blank" rel="noopener sponsored nofollow">View on Amazon</a>`;
+const pcard=p=>`<div class="pcard">${art(p.n,p.a.c,'1/1')}<h4>${esc(p.n)}</h4><div class="row"><span class="price">${inr(p.pr)}</span>${amzBtn(p.n,'sm')}</div><a class="src" href="#/a/${p.a.id}">In: ${p.a.title}</a></div>`;
+const crumbs=(arr)=>`<nav class="crumbs" aria-label="Breadcrumb">${arr.map((x,i)=>(i?'<span>/</span>':'')+(x[1]?`<a href="${x[1]}">${x[0]}</a>`:`<span>${x[0]}</span>`)).join('')}</nav>`;
+const GENERIC_FAQ=[["Are these affiliate links?","Yes. If you buy through an Amazon button I may earn a small commission at no extra cost to you. It never changes which products I list, and I always share the cons too."],["How current are the prices?","Prices are approximate and Amazon changes them often, so check the live price before you buy."]];
+
+/* ============ VIEWS ============ */
+let homeCat='all',homeShown=16;
+const shuffled=[...ARTICLES].sort((a,b)=>hash(a.id)-hash(b.id));
+
+function homeGrid(){
+  const list=shuffled.filter(a=>homeCat==='all'||a.c===homeCat);
+  return `<div class="mas">${list.slice(0,homeShown).map(pin).join('')}</div>${list.length>homeShown?`<div class="more"><button class="btn ghost" data-more>Show more guides</button></div>`:''}`;
+}
+
+function viewHome(){
+  const hero=[['sunscreens','Sunscreens'],['airport-outfits','Airport outfits'],['desk-setup','Desk setups']];
+  return `<div class="wrap">
+  <section class="hero">
+    <div>
+      <h1>Girl Finds</h1>
+      <p class="sub">Discover affordable products, honest recommendations, fashion inspiration and glow-up essentials.</p>
+      <div class="cats">${Object.entries(CATS).map(([k,v])=>`<a class="pill" href="#/${k}">${v.name}</a>`).join('')}</div>
+      <div class="hsearch"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="sr">Search</span><input id="hq" type="search" placeholder="Search sunscreen, hostel, hair fall"><button class="btn sm" data-hsearch>Search</button></div>
+      <div class="try"><span>Popular:</span>${['Sunscreen','Hair fall','Hostel','Sneakers','Travel'].map(t=>`<a href="#/search?q=${encodeURIComponent(t)}">${t}</a>`).join('')}</div>
+    </div>
+    <div class="arches">${hero.map(([id,l])=>`<a class="arch" href="#/a/${id}" aria-label="${BY[id].title}">${art(id+'-hero',BY[id].c,null)}<span class="cap">${l}</span></a>`).join('')}</div>
+  </section>
+
+  <section class="sec">
+    <div class="sech"><h2>Start with a collection</h2><p>One pin, many products. Each page gathers picks from across the site.</p></div>
+    <div class="colls">${Object.entries(COLL).map(([k,c])=>`<a class="coll" href="#/c/${k}">${art('coll-'+k,c.c,'4/3')}<div><h3>${c.title}</h3><p>${collItems(k).length} products</p></div></a>`).join('')}</div>
+  </section>
+
+  <section class="sec">
+    <div class="sech"><h2>Fresh guides</h2></div>
+    <div class="filters" role="group" aria-label="Filter guides">${[['all','All']].concat(Object.entries(CATS).map(([k,v])=>[k,v.name])).map(([k,n])=>`<button class="chipbtn ${homeCat===k?'on':''}" data-filter="${k}">${n}</button>`).join('')}</div>
+    <div id="homegrid">${homeGrid()}</div>
+  </section>
+
+  <section class="sec">
+    <div class="how">
+      <div><span>1</span><h3>Discover</h3><p>Find a guide through Pinterest, Instagram or search.</p></div>
+      <div><span>2</span><h3>Read the honest take</h3><p>Every pick lists price, pros, cons and who it is best for.</p></div>
+      <div><span>3</span><h3>Shop when you're ready</h3><p>One tap to Amazon, only after you know it's right for you.</p></div>
+    </div>
+  </section>
+  </div>`;
+}
+
+function viewCat(c,s){
+  const cat=CATS[c],subs=SUBS[c];
+  const sub=s&&subs.find(x=>x[0]===s);
+  if(s&&!sub)return view404();
+  const list=ARTICLES.filter(a=>a.c===c&&(!s||a.s===s));
+  let h=`<div class="wrap">${crumbs(s?[['Home','#/'],[cat.name,'#/'+c],[sub[1]]]:[['Home','#/'],[cat.name]])}
+  <div class="phead"><h1>${s?sub[1]:cat.name}</h1><p>${cat.blurb}</p></div>`;
+  if(!s){
+    h+=`<div class="tiles">${subs.map(([k,n])=>`<a class="tile" href="#/${c}/${k}">${art(c+k,c,'4/5')}<div class="tn">${n}<small>${ARTICLES.filter(a=>a.c===c&&a.s===k).length} guides</small></div></a>`).join('')}</div>`;
+  }else{
+    h+=`<div class="subnav"><a class="chipbtn" href="#/${c}">All ${cat.name}</a>${subs.map(([k,n])=>`<a class="chipbtn ${k===s?'on':''}" href="#/${c}/${k}">${n}</a>`).join('')}</div>`;
+  }
+  if(c==='amazon-finds'&&!s){
+    h+=`<section class="sec"><div class="sech"><h2>Collections</h2></div><div class="colls">${Object.entries(COLL).map(([k,cl])=>`<a class="coll" href="#/c/${k}">${art('coll-'+k,cl.c,'4/3')}<div><h3>${cl.title}</h3><p>${collItems(k).length} products</p></div></a>`).join('')}</div></section>`;
+  }
+  h+=`<section class="sec">${s?'':`<div class="sech"><h2>All ${cat.name} guides</h2></div>`}${list.length?`<div class="mas">${list.map(pin).join('')}</div>`:`<div class="empty"><h2>New guides are on the way</h2><p>Nothing here yet. Try the search bar or browse another category.</p></div>`}</section></div>`;
+  document.title=(s?sub[1]+' | '+cat.name:cat.name)+' | '+CONFIG.name;
+  return h;
+}
+
+function viewArticle(id){
+  const a=BY[id];if(!a)return view404();
+  const cat=CATS[a.c],sn=subName(a),has=a.p.length>0;
+  const mins=Math.max(3,Math.round(a.p.length*.8+(a.steps?2:0)+2));
+  let h=`<div class="wrap">${crumbs([['Home','#/'],[cat.name,'#/'+a.c],[sn,`#/${a.c}/${a.s}`]])}
+  <header class="ahero">
+    <div>
+      <h1>${a.title}</h1>
+      <p class="lead">${link(a.intro)}</p>
+      <div class="ameta"><span>By The Girl Guide</span><span>Updated ${CONFIG.updated}</span><span>${mins} min read</span></div>
+      <div class="actions"><button class="btn" data-act="pin">Save to Pinterest</button><button class="btn ghost" data-act="copy">Copy link</button></div>
+    </div>
+    <div class="aimg">${art(a.id+'-hero',a.c,'4/5')}</div>
+  </header>
+  <p class="disc">Some links below are Amazon affiliate links. If you buy through them I may earn a small commission at no extra cost to you. Prices are approximate.</p>
+  <div class="narrow">`;
+
+  if(has){
+    const sorted=[...a.p].sort((x,y)=>x.pr-y.pr),lo=sorted[0],hi=sorted[sorted.length-1],top=a.p[0];
+    const idx=p=>a.p.indexOf(p);
+    const cards=[['Top pick',top],['Budget pick',lo===top?sorted[1]||lo:lo],['Splurge',hi===top?sorted[sorted.length-2]||hi:hi]];
+    const seen=new Set();
+    const shown=cards.filter(([l,p])=>p&&!seen.has(p.n)&&seen.add(p.n));
+    h+=`<section class="asec"><h2>Quick summary</h2><div class="summary">${shown.map(([l,p])=>`<button class="sumlink" data-scroll="p${idx(p)}"><small>${l}</small><b>${esc(p.n)}</b><i>${inr(p.pr)}</i></button>`).join('')}<div><small>Price range</small><b>${inr(lo.pr)} to ${inr(hi.pr)}</b><i>${a.p.length} products</i></div></div></section>`;
+  }
+
+  if(a.steps){
+    const done=store.get('tgg:'+a.id);
+    h+=`<section class="asec"><h2>${a.stepsTitle||'Checklist'}</h2><div class="prog"><span id="pt">${done.length} of ${a.steps.length}</span><div><i id="pb" style="width:${done.length/a.steps.length*100}%"></i></div></div><div class="steps ${a.stepGrid?'grid':''}" data-key="tgg:${a.id}" data-total="${a.steps.length}">${a.steps.map((t,i)=>`<label class="step"><input type="checkbox" data-step="${i}" ${done.includes(i)?'checked':''}><span class="box"></span><span class="stxt">${a.stepLabel?`<em>${a.stepLabel} ${i+1}</em>`:''}${esc(t)}</span></label>`).join('')}</div></section>`;
+  }
+
+  if(has){
+    const keys=Object.keys(a.p[0].spec).slice(0,3);
+    h+=`<section class="asec"><h2>Compare at a glance</h2><div class="tw"><table class="cmp"><thead><tr><th></th><th>Product</th><th>Price</th>${keys.map(k=>`<th>${esc(k)}</th>`).join('')}<th>Best for</th></tr></thead><tbody>${a.p.map((p,i)=>`<tr><td>${i+1}</td><td><button data-scroll="p${i}">${esc(p.n)}</button></td><td>${inr(p.pr)}</td>${keys.map(k=>`<td>${esc(p.spec[k]||'\u2014')}</td>`).join('')}<td>${esc(p.best)}</td></tr>`).join('')}</tbody></table></div></section>`;
+
+    h+=`<section class="asec"><h2>The reviews</h2>${a.p.map((p,i)=>`<article class="prod" id="p${i}">
+      ${art(p.n,a.c,'4/5')}
+      <div>
+        <div class="phd"><h3><em>${i+1}</em>${esc(p.n)}</h3><div class="price">${inr(p.pr)}<small>approx.</small></div></div>
+        ${Object.keys(p.spec).length?`<div class="specs">${Object.entries(p.spec).map(([k,v])=>`<span class="spec"><b>${esc(k)}</b>${esc(v)}</span>`).join('')}</div>`:''}
+        <div class="pc"><ul class="pros">${p.pros.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><ul class="cons">${p.cons.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
+        <p class="best"><b>Best for:</b> ${esc(p.best)}</p>
+        ${amzBtn(p.n)}
+      </div></article>`).join('')}</section>`;
+  }
+
+  h+=`<section class="asec"><h2>Questions</h2>${a.faq.concat(GENERIC_FAQ).map(([q,an])=>`<details><summary>${q}</summary><p>${an}</p></details>`).join('')}</section>`;
+
+  if(has){
+    h+=`<section class="asec"><h2>Shop the list</h2><ul class="shop">${a.p.map(p=>`<li><span class="sn">${esc(p.n)}</span><span style="display:flex;align-items:center"><span class="sp">${inr(p.pr)}</span>${amzBtn(p.n,'sm')}</span></li>`).join('')}</ul></section>`;
+  }
+  h+=`</div>`;
+
+  const rel=(a.rel||[]).map(i=>BY[i]).filter(Boolean);
+  ARTICLES.filter(x=>x.id!==a.id&&!rel.includes(x)).sort((x,y)=>((y.s===a.s&&y.c===a.c)-(x.s===a.s&&x.c===a.c))||((y.c===a.c)-(x.c===a.c))||hash(x.id)-hash(y.id)).forEach(x=>{if(rel.length<4)rel.push(x)});
+  h+=`<section class="asec"><h2 style="font-size:clamp(32px,4vw,46px);margin-bottom:26px">Keep reading</h2><div class="mas">${rel.slice(0,4).map(pin).join('')}</div></section></div>`;
+  document.title=a.title+' | '+CONFIG.name;
+  return h;
+}
+
+function viewColl(k){
+  const c=COLL[k];if(!c)return view404();
+  const items=collItems(k);
+  let h=`<div class="wrap">${crumbs([['Home','#/'],['Collections'],[c.title]])}<div class="phead"><h1>${c.title}</h1><p>${c.blurb} ${items.length} products so far.</p></div>`;
+  if(c.group){
+    const groups=[];items.forEach(p=>{let g=groups.find(x=>x.a===p.a);if(!g)groups.push(g={a:p.a,items:[]});g.items.push(p)});
+    h+=groups.map(g=>`<section class="grp"><h2><a href="#/a/${g.a.id}">${g.a.title}</a></h2><div class="pgrid">${g.items.map(pcard).join('')}</div></section>`).join('');
+  }else{
+    h+=`<div class="pgrid">${items.sort((x,y)=>x.pr-y.pr).map(pcard).join('')}</div>`;
+  }
+  h+=`<section class="sec"><div class="sech"><h2>More collections</h2></div><div class="colls">${Object.entries(COLL).filter(([x])=>x!==k).map(([x,cl])=>`<a class="coll" href="#/c/${x}">${art('coll-'+x,cl.c,'4/3')}<div><h3>${cl.title}</h3><p>${collItems(x).length} products</p></div></a>`).join('')}</div></section></div>`;
+  document.title=c.title+' | '+CONFIG.name;
+  return h;
+}
+
+function runSearch(q){
+  const t=q.toLowerCase().split(/\s+/).filter(Boolean).map(w=>w.length>3?w.replace(/s$/,''):w);
+  if(!t.length)return{a:[],p:[]};
+  const a=ARTICLES.map(x=>{
+    const T=x.title.toLowerCase(),G=(x.tags+' '+CATS[x.c].name+' '+subName(x)).toLowerCase(),N=x.p.map(p=>p.n).join(' ').toLowerCase();
+    let s=0,hit=0;
+    t.forEach(w=>{let h=0;if(T.includes(w))h+=5;if(G.includes(w))h+=3;if(N.includes(w))h+=2;if(h)hit++;s+=h});
+    return{x,s,hit};
+  }).filter(o=>o.hit===t.length).sort((m,n)=>n.s-m.s).map(o=>o.x);
+  const p=ALLP.filter(pr=>t.every(w=>(pr.n+' '+pr.best).toLowerCase().includes(w))).slice(0,12);
+  return{a,p};
+}
+
+function viewSearch(q){
+  const POP=['Sunscreen','Hair fall','Hostel','Sneakers','Travel','Skincare','Desk','Routine'];
+  let h=`<div class="wrap">${crumbs([['Home','#/'],['Search']])}`;
+  if(!q.trim()){
+    h+=`<div class="phead"><h1>Search</h1><p>Type in the search bar above to find guides and products.</p></div><div class="filters">${POP.map(t=>`<a class="chipbtn" href="#/search?q=${encodeURIComponent(t)}">${t}</a>`).join('')}</div></div>`;
+    document.title='Search | '+CONFIG.name;return h;
+  }
+  const r=runSearch(q);
+  h+=`<div class="phead"><h1>${r.a.length} ${r.a.length===1?'guide':'guides'} for "${esc(q)}"</h1></div>`;
+  if(r.a.length)h+=`<div class="mas">${r.a.map(pin).join('')}</div>`;
+  else h+=`<div class="empty"><h2>No guides match that yet</h2><p>Try a shorter word like "hair" or "travel", or browse a popular search.</p><div class="filters" style="margin-top:18px">${POP.map(t=>`<a class="chipbtn" href="#/search?q=${encodeURIComponent(t)}">${t}</a>`).join('')}</div></div>`;
+  if(r.p.length)h+=`<section class="sec"><div class="sech"><h2>Matching products</h2></div><div class="pgrid">${r.p.map(pcard).join('')}</div></section>`;
+  h+=`</div>`;
+  document.title=`"${q}" | Search | ${CONFIG.name}`;
+  return h;
+}
+
+function viewAbout(){
+  document.title='About Me | '+CONFIG.name;
+  return `<div class="wrap">${crumbs([['Home','#/'],['About Me']])}
+  <div class="phead"><h1>About me</h1></div>
+  <div class="split">
+    ${art('about-me','beauty','4/5','Your photo goes here')}
+    <div class="prose">
+      <h2>Hi, I'm the girl behind The Girl Guide.</h2>
+      <p>This started as a notes app full of things I bought that were actually worth it, and a much longer list of things that weren't. Friends kept asking for the list, so I turned it into a guide.</p>
+      <p>Here you'll find affordable beauty, fashion, home and lifestyle picks, written the way I'd explain them to my best friend: what it costs, what's good, what isn't and who it is really for.</p>
+      <h2>How I pick products</h2>
+      <ul>
+        <li><b>Price first.</b> I keep things realistic for students and first jobs.</li>
+        <li><b>Pros and cons, always.</b> If a product has a flaw, you'll read it here.</li>
+        <li><b>Best for.</b> Every pick says who it suits, so you don't waste money.</li>
+        <li><b>Kept current.</b> Guides are updated when prices or products change.</li>
+      </ul>
+      <h2>A note on affiliate links</h2>
+      <p>As an Amazon Associate I earn from qualifying purchases. If you buy through a link, I may earn a small commission at no extra cost to you. It helps keep this site free, and it never changes what I recommend.</p>
+      <p><a class="btn" href="#/contact">Say hello</a></p>
+    </div>
+  </div></div>`;
+}
+
+function viewContact(){
+  document.title='Contact | '+CONFIG.name;
+  return `<div class="wrap">${crumbs([['Home','#/'],['Contact']])}
+  <div class="phead"><h1>Contact</h1><p>Questions, product suggestions, collabs or brand deals. I read everything.</p></div>
+  <div class="split">
+    <div class="prose">
+      <h2>Ways to reach me</h2>
+      <ul>
+        <li><b>Email:</b> <a href="mailto:${CONFIG.email}">${CONFIG.email}</a></li>
+        <li><b>Instagram:</b> <a href="${CONFIG.instagram}" target="_blank" rel="noopener">Follow along</a></li>
+        <li><b>Pinterest:</b> <a href="${CONFIG.pinterest}" target="_blank" rel="noopener">Save the guides</a></li>
+      </ul>
+      <h2>Brand deals</h2>
+      <p>I only work with products I'd genuinely recommend, and sponsored posts are always marked clearly.</p>
+    </div>
+    <form id="cf" novalidate>
+      <label class="fld"><span>Your name</span><input name="name" autocomplete="name" required></label>
+      <label class="fld"><span>Your email</span><input name="email" type="email" autocomplete="email" required></label>
+      <label class="fld"><span>What is this about?</span><select name="topic"><option>Product suggestion</option><option>Collab or brand deal</option><option>Feedback</option><option>Something else</option></select></label>
+      <label class="fld"><span>Message</span><textarea name="msg" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+      <p class="note" id="cfn" hidden>Your email app should open with the message ready to send.</p>
+    </form>
+  </div></div>`;
+}
+
+function view404(){
+  document.title='Page not found | '+CONFIG.name;
+  return `<div class="wrap"><div class="phead"><h1>Page not found</h1><p>That page doesn't exist, or it moved. Head back home or try the search bar.</p><p><a class="btn" href="#/">Go home</a></p></div></div>`;
+}
+
+/* ============ ROUTER ============ */
+const NAV=[['','Home'],['beauty','Beauty'],['fashion','Fashion'],['amazon-finds','Amazon Finds'],['home-decor','Home Decor'],['lifestyle','Lifestyle'],['about','About Me'],['contact','Contact']];
+$('#nav').innerHTML=NAV.map(([k,n])=>`<a href="#/${k}" data-nav="${k}">${n}</a>`).join('');
+$('#ft1').innerHTML=NAV.map(([k,n])=>`<li><a href="#/${k}">${n}</a></li>`).join('');
+$('#ft2').innerHTML=Object.entries(COLL).map(([k,c])=>`<li><a href="#/c/${k}">${c.title}</a></li>`).join('');
+
+function parse(){
+  const raw=location.hash.replace(/^#\/?/,'');
+  const [path,qs]=raw.split('?');
+  return{seg:path.split('/').filter(Boolean).map(decodeURIComponent),q:new URLSearchParams(qs||'').get('q')||''};
+}
+function render(scroll=true){
+  const {seg,q}=parse();
+  let h,active=seg[0]||'';
+  if(!seg.length){h=viewHome();document.title=CONFIG.name+' | Affordable finds, honest picks, glow-up essentials'}
+  else if(seg[0]==='a'){h=viewArticle(seg[1]);active=BY[seg[1]]?BY[seg[1]].c:''}
+  else if(seg[0]==='c'){h=viewColl(seg[1]);active='amazon-finds'}
+  else if(seg[0]==='search'){h=viewSearch(q);active='__'}
+  else if(seg[0]==='about'){h=viewAbout()}
+  else if(seg[0]==='contact'){h=viewContact()}
+  else if(CATS[seg[0]]&&seg.length<=2){h=viewCat(seg[0],seg[1])}
+  else{h=view404();active='__'}
+  $('#app').innerHTML=h;
+  document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on',a.dataset.nav===active));
+  $('#nav').classList.remove('open');$('#menu').setAttribute('aria-expanded','false');
+  const qi=$('#q');
+  if(seg[0]==='search'){if(qi.value!==q&&document.activeElement!==qi)qi.value=q}else qi.value='';
+  if(scroll)window.scrollTo({top:0,behavior:'instant'});
+}
+window.addEventListener('hashchange',()=>render(true));
+
+/* ============ EVENTS ============ */
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-scroll],[data-act],[data-filter],[data-more],[data-hsearch]');
+  if(!t)return;
+  if(t.dataset.scroll){const el=document.getElementById(t.dataset.scroll);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})}
+  else if(t.dataset.filter){homeCat=t.dataset.filter;homeShown=16;$('#homegrid').innerHTML=homeGrid();document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('on',b.dataset.filter===homeCat))}
+  else if('more' in t.dataset){homeShown+=16;$('#homegrid').innerHTML=homeGrid()}
+  else if('hsearch' in t.dataset){const v=$('#hq').value.trim();if(v)location.hash='#/search?q='+encodeURIComponent(v)}
+  else if(t.dataset.act==='pin'){const a=BY[parse().seg[1]];window.open('https://www.pinterest.com/pin/create/button/?url='+encodeURIComponent(location.href)+'&description='+encodeURIComponent(a?a.title:CONFIG.name),'_blank','noopener')}
+  else if(t.dataset.act==='copy'){const done=()=>{t.textContent='Link copied';setTimeout(()=>t.textContent='Copy link',1800)};try{navigator.clipboard.writeText(location.href).then(done,done)}catch(err){done()}}
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Enter'&&e.target.id==='hq'){const v=e.target.value.trim();if(v)location.hash='#/search?q='+encodeURIComponent(v)}
+});
+document.addEventListener('change',e=>{
+  const i=e.target.closest('input[data-step]');if(!i)return;
+  const box=i.closest('.steps'),key=box.dataset.key,total=+box.dataset.total;
+  const on=[...box.querySelectorAll('input[data-step]:checked')].map(x=>+x.dataset.step);
+  store.set(key,on);$('#pt').textContent=on.length+' of '+total;$('#pb').style.width=(on.length/total*100)+'%';
+});
+document.addEventListener('submit',e=>{
+  if(e.target.id!=='cf')return;e.preventDefault();
+  const f=new FormData(e.target),n=(f.get('name')||'').trim(),m=(f.get('msg')||'').trim();
+  if(!n||!m){$('#cfn').hidden=false;$('#cfn').style.color='var(--bad)';$('#cfn').textContent='Add your name and a message so I can reply.';return}
+  $('#cfn').style.color='';$('#cfn').textContent='Your email app should open with the message ready to send.';$('#cfn').hidden=false;
+  location.href='mailto:'+CONFIG.email+'?subject='+encodeURIComponent('[The Girl Guide] '+f.get('topic'))+'&body='+encodeURIComponent(m+'\n\nFrom: '+n+' ('+(f.get('email')||'')+')');
+});
+
+let st;
+$('#q').addEventListener('input',e=>{
+  clearTimeout(st);const v=e.target.value;
+  st=setTimeout(()=>{
+    if(v.trim()){const h='#/search?q='+encodeURIComponent(v);if(location.hash.startsWith('#/search')){history.replaceState(null,'',h);render(false)}else location.hash=h}
+    else if(location.hash.startsWith('#/search'))location.hash='#/';
+  },200);
+});
+$('#q').addEventListener('keydown',e=>{if(e.key==='Escape'){e.target.value='';e.target.blur();if(location.hash.startsWith('#/search'))location.hash='#/'}});
+$('#menu').addEventListener('click',()=>{const n=$('#nav'),o=n.classList.toggle('open');$('#menu').setAttribute('aria-expanded',o)});
+$('#theme').addEventListener('click',()=>{
+  const cur=document.documentElement.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+  const n=cur==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);
+  try{localStorage.setItem('tgg-theme',n)}catch(e){}
+});
+try{const t=localStorage.getItem('tgg-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}
+
+render(false);
+</script>
+</body>
+</html>
